@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+<title>Article Test Design One</title>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400" />
+<link rel="stylesheet" type="text/css" href="article.css"  />
+<link type="text/css" rel="stylesheet" href="jquery.mmenu.css" />
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="jquery.mmenu.ie8.css" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="jquery.mmenu.positioning.css" />
+<style>
+nav {
+    display: none;
+}
+
+/* Big cover image on the home page */
+#site-head {
+    position: relative;
+    display: table;
+    width: 100%;
+    /* height: 60%;  see NOTE above to make this work */
+    text-align: center;
+    color: #fff;
+    background: #303538 no-repeat center center;
+    background-size: cover;
+    padding-top: 2em;  
+    padding-bottom: 1em;
+}
+
+#blog-author-image {
+    width:50px;
+    height:50px;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -khtml-border-radius: 25px;
+    -webkit-border-radius: 25px;
+}
+
+#blog-title {
+    font-size: 2em;
+    line-height: 1em; 
+}
+
+#blog-description {
+    font-size: 1em;
+    line-height: 1.5em; 
+}
+
+header #homelink a, header #homelink {
+    color: #888888;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#homelink a:hover, header a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* mmenu start */
+header {
+    display: block;
+    float: left;
+    width: 100%;
+    left: auto;
+/*    position: fixed; */
+}
+
+header a
+{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+header a.right
+{
+    left: auto;
+    right: 10px;
+}
+
+header {
+    height: 30px;
+}
+
+header a {
+    display: none;
+    display: inherit;
+    background: none;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    padding: 0 20px 0 0;
+    margin: 0;
+    line-height: 1em;
+}
+
+#homelink {
+    font-size: 80%;
+    color: #ccc;
+    padding: 5px 5px 0 5px;
+}
+
+.mm-menu {
+    background: #666;
+/* simple */
+background: #fff; 
+} 
+
+.mm-list {
+    font-size: 1em;
+    color: #ccc;
+/* simple */
+color: #888;
+    text-align: right;
+}
+
+.mm-list > li { 
+}
+
+.mm-list a:hover {
+    background: #777; 
+/* simple */
+background: #fff;
+/* simple */
+color: #000;
+text-decoration: underline;
+}
+
+.mm-list > li:not(.mm-subtitle):not(.mm-label):not(.mm-noresults)::after {
+    border: none;
+}
+
+#mm-blocker {
+    background: #000;
+}
+
+.mm-menu.mm-right {
+    width: 140px;
+} 
+
+.mm-menu.mm-front {
+    box-shadow: none;
+/* simple */
+border-left: 1px solid #000; 
+}
+
+html.mm-right.mm-opened.mm-opening .mm-page,
+html.mm-right.mm-opened.mm-opening #mm-blocker,
+html.mm-right.mm-opened.mm-opening .mm-fixed-top,
+html.mm-right.mm-opened.mm-opening .mm-fixed-bottom {
+    right: 140px;
+}
+
+#hamburger {
+    padding: 10px 5px 0 0;
+    width: 20px;
+}
+
+#hamburger div {
+    background-color: #ccc;
+/* simple */
+background-color: #888;
+    height: 2px;
+    width: 90%;
+    margin-bottom: 2px; 
+}
+
+/* mmenu end */
+
+@media only screen and (max-width: 56em) { 
+    header {
+        background-color: #ffffff;
+/*        position: fixed; */
+/*        border-bottom: 1px solid #888888; */
+    }
+    #wrapper {
+        padding-top: 30px;
+    }
+}
+
+</style>
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+<div id="page"> <!-- used by mmenu -->
+
+<header>
+<a title="Home Page" href="#"><div id="homelink">TheTrout</div></a>
+<a class="right" title="menu" href="#menu">
+<div id="hamburger">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</a>
+</header>
+
+<nav id="menu"> <!-- id=menu used by mmenu -->
+<ul>
+<li><a title="Search"                 href="#">Search</a></li>
+<li><a title="News"                   href="#">News</a></li>
+<li><a title="Sports"                 href="#">Sports</a></li>
+<li><a title="Arts and Entertainment" href="#">A & E</a></li>
+<li><a title="Business"               href="#">Business</a></li>
+<li><a title="Opinion"                href="#">Opinion</a></li>
+</ul>
+</nav>
+
+
+
+
+
+<article id="wrapper">
+
+<section id="topsection">
+
+<h1 id="articletitle"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h1>
+
+<p id="subtitle">
+Ut enim ad minim veniam quis nostrud exercitation ullamco
+</p>
+
+<p>
+by <a title="Trout Staff Writer Nick Adams" href="#">Nick Adams</a> - Trout Staff Writer
+</p>
+
+</section>
+
+<section id="middlesection">
+
+<!-- the original size of this photo is only 640x480 -->
+<div class="caption">
+<img src="hh1.jpg">
+<br />
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+</div>
+
+<p>Mauris eu luctus lorem. Sed quis varius leo. In in pharetra felis. Donec ut molestie lectus. Aliquam ut lectus id quam pellentesque vehicula et ac erat. </p>
+
+<p>Ut pretium pellentesque lectus, sit amet sodales urna elementum et. Aliquam in ipsum in tortor varius molestie.</p>
+
+<p> Cras blandit lacus eros, quis feugiat orci porta et. Etiam euismod mauris in nunc pulvinar, vel dapibus diam pharetra. Curabitur eget mauris pellentesque, venenatis erat at, bibendum mauris.</p>
+
+<p>Aliquam non nibh dictum, egestas risus vitae, luctus leo. Ut in enim et libero feugiat aliquam. </p>
+
+<p>Duis mattis elementum mauris eget varius. Etiam pellentesque commodo nunc ut facilisis. Ut massa elit, sollicitudin non condimentum sed, mattis at nisi. Vestibulum ipsum enim, tempus nec fermentum ac, cursus rutrum velit. </p>
+
+<p>Maecenas nec tincidunt arcu, vel pretium nunc.</p>
+
+<p>Aenean egestas lectus a nulla ultrices sodales. Nunc aliquam commodo iaculis. Donec sollicitudin tincidunt augue id dignissim. Mauris dignissim porttitor libero nec ultrices. </p>
+
+<div class="caption">
+<img src="snow1.jpg">
+</div>
+
+<p>Duis gravida, dui quis sagittis feugiat, ante mi commodo augue, sed accumsan justo augue id lorem. Suspendisse fringilla consectetur libero, non auctor nisl pulvinar vel.</p> 
+
+<p>Mauris at elit ligula. Vivamus eget viverra arcu. Proin fermentum fermentum augue, ac tincidunt nibh. Nulla placerat lectus a rutrum mollis.</p>
+
+<p>Maecenas tempus quam quis sem accumsan, et mollis metus semper.  Nam rutrum elementum lorem, quis accumsan augue. Mauris in turpis nulla.</p> 
+
+<p>Suspendisse blandit est egestas enim pretium, a venenatis dui varius. Aliquam at leo vel erat porttitor interdum ut sed metus.</p>
+
+<p>Phasellus eget nulla molestie, sagittis erat viverra, iaculis enim. Sed bibendum nulla in ipsum semper pretium. </p>
+
+<p>Ut ac elementum augue. Etiam ultrices leo ante, at egestas massa pulvinar euismod. Morbi sit amet erat vel massa mattis condimentum. Pellentesque in fringilla est. Donec at lacus eleifend nulla sagittis lacinia.</p>
+
+<p>Curabitur sit amet libero et neque suscipit consequat sed id magna. Proin posuere commodo interdum. </p>
+
+<div class="caption">
+<img src="redpolls1.jpg">
+<br />
+Aliquam id turpis sit amet purus posuere dictum. Donec fringilla sapien sem, ut ultrices velit sodales sit amet.
+</div>
+
+<p>Integer aliquam, quam non vehicula scelerisque, orci nisl imperdiet felis, non gravida nunc eros quis neque. Nullam vel elit eleifend, cursus leo varius, auctor neque. Donec placerat ligula ac leo porttitor, id bibendum arcu posuere. Morbi id quam semper, aliquet ipsum eget, laoreet erat. </p>
+
+<p>In dignissim tortor leo, quis placerat ante porta ac. Mauris tempor elit sed ipsum egestas, ultricies rutrum mi elementum. </p>
+
+<p>
+Cras malesuada consectetur adipiscing. Nullam vulputate elit ut metus consequat, elementum egestas nisi ullamcorper. Proin sagittis diam velit, vel adipiscing tellus aliquam vitae.
+</p>
+
+<p>
+Suspendisse ultrices, lacus sit amet rutrum fringilla, libero mi porta erat, eget mattis eros lorem et est. Praesent lorem lectus, posuere id enim sit amet, scelerisque dignissim mauris.
+</p>
+
+<p>
+Quisque ac cursus tellus. Sed sit amet nisi pulvinar eros gravida tempus in quis ipsum. Pellentesque vulputate, nisi in congue lobortis, lacus purus sollicitudin massa, nec tristique elit lacus in diam.
+</p>
+
+<div class="caption">
+<img src="apartment1.jpg">
+</div>
+
+<p>Vivamus nec turpis ut lectus scelerisque rutrum. Donec convallis odio eros, non porta risus iaculis sed. </p>
+
+<p>Quisque hendrerit dictum tempus. Aliquam at vestibulum nunc. Phasellus sagittis mi purus, mollis rutrum nisl hendrerit vel. Nulla convallis sapien vel nisl condimentum, non aliquet nisl rutrum. </p>
+
+<p>Donec a augue diam. </p>
+
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames eget.</p>
+
+<p>Etiam et justo id libero lobortis dapibus. In quis est ultrices, auctor augue sit amet, tincidunt urna. Donec quis scelerisque est. </p>
+
+</section>
+</article>
+
+<section class="bigquote">
+<em>"Vivamus vulputate nibh laoreet luctus pellentesque. Aenean ac dui vel turpis vestibulum aliquam. Quisque feugiat dui in sapien aliquam lacinia." </em>
+</section>
+
+<article>
+<section id="middlesection">
+
+<p>Cras malesuada consectetur adipiscing. Nullam vulputate elit ut metus consequat, elementum egestas nisi ullamcorper.</p> 
+
+<p>Suspendisse ultrices, lacus sit amet rutrum fringilla, libero mi porta erat, eget mattis eros lorem et est.</p> 
+
+<p>Duis consectetur turpis ut nisi condimentum, a aliquam lorem cursus. Nam et bibendum odio. </p>
+
+<p>Maecenas lobortis massa nunc, et malesuada velit malesuada a. Curabitur bibendum nisl eget lectus scelerisque, non lacinia mi adipiscing. </p>
+
+<div style="border: 1px solid #000;">
+<blockquote>
+<p>"Maecenas nec tincidunt arcu, vel pretium nunc."</p>
+
+<p>"Donec a augue diam."</p>
+
+<p>"Sed laoreet turpis a risus aliquam, et vestibulum leo pharetra."</p>
+
+<p>"Phasellus sagittis mi purus, mollis rutrum nisl hendrerit vel."</p>
+
+</blockquote>
+</div>
+
+<p>Suspendisse ornare, orci gravida imperdiet adipiscing, eros tortor dictum mauris, in viverra arcu leo vitae augue. Nam volutpat massa a purus ultricies ullamcorper.</p>
+
+<p>Sed metus erat, adipiscing nec leo sit amet, ultricies adipiscing lacus. Integer tempus urna ac leo mollis, nec viverra sapien suscipit. </p>
+
+<p>Mauris at elit ligula. Vivamus eget viverra arcu. Proin fermentum fermentum augue, ac tincidunt nibh. Nulla placerat lectus a rutrum mollis.</p>
+
+<div class="caption">
+<img src="caterpillar1.jpg">
+<br />
+Vivamus nec turpis ut lectus scelerisque rutrum. Donec convallis odio eros, non porta risus iaculis sed.
+</div>
+
+<p>Nam rutrum elementum lorem, quis accumsan augue. Mauris in turpis nulla. Suspendisse ac dui faucibus, lobortis libero nec, molestie leo.</p> 
+
+<p>Mauris eu nunc semper, lobortis dui ornare, blandit odio.</p>
+
+<p>Duis tristique, velit sed tempus rhoncus, lorem lectus pharetra risus, in ullamcorper velit ante nec tortor. Vestibulum ultricies at libero sed posuere. Integer facilisis at ipsum in vulputate. Quisque consequat non nisl et aliquet. </p>
+
+<p>Donec a augue diam.</p>
+
+<p>Maecenas eleifend risus felis, id vehicula erat laoreet sit amet. Vestibulum tempor sem feugiat, mollis ipsum ut, vulputate nulla. Donec eget pretium nisl.</p>
+
+<div class="caption">
+<center>
+<img src="lakeerie1.jpg">
+<br />
+In ac quam id nisi porta tincidunt.
+</center>
+</div>
+
+</section> <!-- close id=middlesection -->
+
+<section id="bottomsection">
+<p>
+Contact Nick Adams at: <a href="#">nickadams@thetrout.com</a>, 555-555-5555, or on Twitter <a href="#">@nonexistent</a>.
+</p>
+
+<p>
+Published: Friday, 1/31/2014 
+</p>
+
+</section>
+
+</article>
+
+
+<footer>
+<div id="footermenu">
+<ul>
+<li><a title="About"     href="#">About</a></li> 
+<li><a title="Help"      href="#">Help</a></li> 
+<li><a title="Contact"   href="#">Contact</a></li> 
+<li><a title="Archives"  href="#">Archives</a></li> 
+<li><a title="Search"    href="#">Search</a></li> 
+</ul>
+</div>
+<p>
+current date: Feb 2, 2014 - 3:47 p.m. EST
+</p>
+</footer> <!-- close id=footermenu -->
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
+<script type="text/javascript" src="jquery.mmenu.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('nav#menu').mmenu({
+            position: "right",
+            zposition: "front"
+        });
+    });
+</script>
+
+</div> <!-- end id=page used by mmenu -->
+
+</body>
+</html>
