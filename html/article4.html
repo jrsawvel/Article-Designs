@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+<meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=yes" />
+<title>TB Test</title>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400" />
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="article.css"  />
+<link type="text/css" rel="stylesheet" href="jquery.mmenu.css" />
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="jquery.mmenu.ie8.css" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="jquery.mmenu.positioning.css" />
+<!--
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.mmenu.js"></script>
+-->
+<style>
+
+#topsection {
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+h1,h2 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif; 
+    margin: 50px 0 10px 0;
+    padding: 0;
+}
+
+article {
+    max-width: 44em;
+}
+
+#middlesection p {
+    margin-top: 0px;;
+    margin-bottom: 25px;
+}
+#middlesection {
+    color: #444;
+    font-family: 'PT Serif', serif;
+    font-size: 130%;
+/*    letter-spacing: 1px;  */
+}
+
+.bigquote {
+    font-family: 'Open Sans', serif;
+    font-family: 'PT Serif', serif;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+nav {
+    display: none;
+}
+
+/* Big cover image on the home page */
+#site-head {
+    position: relative;
+    display: table;
+    width: 100%;
+    /* height: 60%;  see NOTE above to make this work */
+    text-align: center;
+    color: #fff;
+    background: #303538 no-repeat center center;
+    background-size: cover;
+    padding-top: 2em;  
+    padding-bottom: 1em;
+}
+
+#blog-author-image {
+    width:50px;
+    height:50px;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -khtml-border-radius: 25px;
+    -webkit-border-radius: 25px;
+}
+
+#blog-title {
+    font-size: 2em;
+    line-height: 1em; 
+}
+
+#blog-description {
+    font-size: 1em;
+    line-height: 1.5em; 
+}
+
+header #homelink a, header #homelink {
+    color: #888888;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#homelink a:hover, header a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* mmenu start */
+header {
+    display: block;
+    float: left;
+    width: 10%;
+    left: auto;
+/*    position: fixed; */
+}
+
+/*
+header a
+{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+*/
+
+/*
+header a.right
+{
+    left: auto;
+    right: 10px;
+}
+*/
+
+header {
+    height: 30px;
+}
+
+header a {
+    display: none;
+    display: inherit;
+    background: none;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    padding: 0 20px 0 0;
+    margin: 0;
+    line-height: 1em;
+}
+
+header .worklinks a, header .worklinks a:visited {
+    color: #444;
+    text-decoration: none;
+}
+
+header .worklinks a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.usermenu1 {
+    padding-top: 5px;
+    margin-left: 50px;
+}
+.usermenu2 {
+    margin-left: 80px;
+}
+.usermenu3 {
+    margin-left: 110px;
+}
+
+#homelink {
+    font-size: 80%;
+    color: #ccc;
+    padding: 5px 5px 0 5px;
+    margin-left: 35px;
+}
+
+.mm-menu {
+    background: #000; 
+} 
+
+.mm-list {
+    font-size: 1em;
+    color: #ddd;
+    text-align: left;
+}
+
+.mm-list > li { 
+}
+
+.mm-list a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.mm-list > li:not(.mm-subtitle):not(.mm-label):not(.mm-noresults)::after {
+    border: none;
+}
+
+#mm-blocker {
+    background: #000;
+}
+
+.mm-menu.mm-right {
+    width: 140px;
+} 
+
+/* for controlling the menu when positioned at the left */
+.mm-menu {
+  width: 140px;
+}
+
+.mm-menu.mm-front {
+    box-shadow: none;
+/* simple */
+border-right: 1px solid #000; 
+}
+
+html.mm-right.mm-opened.mm-opening .mm-page,
+html.mm-right.mm-opened.mm-opening #mm-blocker,
+html.mm-right.mm-opened.mm-opening .mm-fixed-top,
+html.mm-right.mm-opened.mm-opening .mm-fixed-bottom {
+    right: 140px;
+}
+
+html.mm-opened.mm-opening .mm-page,
+html.mm-opened.mm-opening #mm-blocker,
+html.mm-opened.mm-opening .mm-fixed-top,
+html.mm-opened.mm-opening .mm-fixed-bottom {
+  left: 140px; 
+}
+
+
+#hamburger {
+/*     padding: 10px 5px 0 0; */
+    padding: 10px 0 0 5px;
+    width: 20px;
+}
+
+#hamburger div {
+    background-color: #ccc;
+/* simple */
+/* background-color: #888; */
+    height: 2px;
+    width: 90%;
+    margin-bottom: 2px; 
+}
+
+/* mmenu end */
+
+@media only screen and (max-width: 56em) { 
+    header {
+        background-color: #ffffff;
+/*        position: fixed; */
+/*        border-bottom: 1px solid #888888; */
+    }
+    #wrapper {
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 75em) { 
+#topsection {
+    margin: 0;
+    padding: 0;
+}
+}
+
+</style>
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+<div id="page"> <!-- used by mmenu -->
+
+<header>
+<!-- <a class="right" title="menu" href="#menu"> -->
+<a class="left" title="menu" href="#menu">
+<div id="hamburger">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</a>
+<div class="worklinks usermenu1"><a title="Your Articles" href="#">Y</a></div>
+<div class="worklinks usermenu2"><a title="Your Drafts" href="#">D</a></div>
+<div class="worklinks usermenu3"><a title="Your Notes" href="#">N</a></div>
+</header>
+
+<nav id="menu"> <!-- id=menu used by mmenu -->
+<ul>
+<li><a title="Home"       href="#">Home</a></li>
+<li><a title="Search"     href="#">Search</a></li>
+<li><a title="Tags"       href="#">Tags</a></li>
+<li><a title="Changes"    href="#">Changes</a></li>
+<li><a title="Post"       href="#">Post</a></li>
+<li><a title="Logout"     href="#">Logout</a></li>
+</ul>
+</nav>
+
+<article id="wrapper">
+
+<section id="topsection">
+
+<h1 id="articletitle"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h1>
+
+<p id="subtitle">
+Ut enim ad minim veniam quis nostrud exercitation ullamco
+</p>
+
+<p>
+by <a title="Trout Staff Writer Nick Adams" href="#">Nick Adams</a> - Trout Staff Writer
+</p>
+
+</section>
+
+<section id="middlesection">
+
+<!-- the original size of this photo is only 640x480 -->
+<div class="caption">
+<img src="hh1.jpg">
+<br />
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+</div>
+
+<p>
+You hired a new developer for a project you.re working on and she seems to have solved all of your problems. She.s been on the job for 3 days and she.s already suggested upgrades for 5 of your libraries and re-organized your JIRA issues. At every turn, she seems to validate your choice in hiring her. She.s found 8 bugs that were glaring and would have caused a critical meltdown. How terrible was your previous developer that he couldn.t have spotted any of this?? She.s baffled by his decision to use the XYZ framework and doesn.t understand why he chose to use Postgres instead of CouchDB for this particular application. She complains to you that the lack of a CDN is costing you HOURS in needless content serving. How could you have been so blind to not see any of this? Well, it wasn.t your job, right? That was your previous developers. job and he seems to have failed miserably. Good riddance.
+</p>
+
+<p>Mauris eu luctus lorem. Sed quis varius leo. In in pharetra felis. Donec ut molestie lectus. Aliquam ut lectus id quam pellentesque vehicula et ac erat. </p>
+
+<p>Ut pretium pellentesque lectus, sit amet sodales urna elementum et. Aliquam in ipsum in tortor varius molestie.</p>
+
+<p> Cras blandit lacus eros, quis feugiat orci porta et. Etiam euismod mauris in nunc pulvinar, vel dapibus diam pharetra. Curabitur eget mauris pellentesque, venenatis erat at, bibendum mauris.</p>
+
+<p>Aliquam non nibh dictum, egestas risus vitae, luctus leo. Ut in enim et libero feugiat aliquam. </p>
+
+<p>Duis mattis elementum mauris eget varius. Etiam pellentesque commodo nunc ut facilisis. Ut massa elit, sollicitudin non condimentum sed, mattis at nisi. Vestibulum ipsum enim, tempus nec fermentum ac, cursus rutrum velit. </p>
+
+<p>Maecenas nec tincidunt arcu, vel pretium nunc.</p>
+
+<p>Aenean egestas lectus a nulla ultrices sodales. Nunc aliquam commodo iaculis. Donec sollicitudin tincidunt augue id dignissim. Mauris dignissim porttitor libero nec ultrices. </p>
+
+<div class="caption">
+<img src="snow1.jpg">
+</div>
+
+<p>Duis gravida, dui quis sagittis feugiat, ante mi commodo augue, sed accumsan justo augue id lorem. Suspendisse fringilla consectetur libero, non auctor nisl pulvinar vel.</p> 
+
+<p>Mauris at elit ligula. Vivamus eget viverra arcu. Proin fermentum fermentum augue, ac tincidunt nibh. Nulla placerat lectus a rutrum mollis.</p>
+
+<p>Maecenas tempus quam quis sem accumsan, et mollis metus semper.  Nam rutrum elementum lorem, quis accumsan augue. Mauris in turpis nulla.</p> 
+
+<p>Suspendisse blandit est egestas enim pretium, a venenatis dui varius. Aliquam at leo vel erat porttitor interdum ut sed metus.</p>
+
+<p>Phasellus eget nulla molestie, sagittis erat viverra, iaculis enim. Sed bibendum nulla in ipsum semper pretium. </p>
+
+<p>Ut ac elementum augue. Etiam ultrices leo ante, at egestas massa pulvinar euismod. Morbi sit amet erat vel massa mattis condimentum. Pellentesque in fringilla est. Donec at lacus eleifend nulla sagittis lacinia.</p>
+
+<p>Curabitur sit amet libero et neque suscipit consequat sed id magna. Proin posuere commodo interdum. </p>
+
+<div class="caption">
+<img src="redpolls1.jpg">
+<br />
+Aliquam id turpis sit amet purus posuere dictum. Donec fringilla sapien sem, ut ultrices velit sodales sit amet.
+</div>
+
+<p>Integer aliquam, quam non vehicula scelerisque, orci nisl imperdiet felis, non gravida nunc eros quis neque. Nullam vel elit eleifend, cursus leo varius, auctor neque. Donec placerat ligula ac leo porttitor, id bibendum arcu posuere. Morbi id quam semper, aliquet ipsum eget, laoreet erat. </p>
+
+<p>In dignissim tortor leo, quis placerat ante porta ac. Mauris tempor elit sed ipsum egestas, ultricies rutrum mi elementum. </p>
+
+<p>
+Cras malesuada consectetur adipiscing. Nullam vulputate elit ut metus consequat, elementum egestas nisi ullamcorper. Proin sagittis diam velit, vel adipiscing tellus aliquam vitae.
+</p>
+
+<p>
+Suspendisse ultrices, lacus sit amet rutrum fringilla, libero mi porta erat, eget mattis eros lorem et est. Praesent lorem lectus, posuere id enim sit amet, scelerisque dignissim mauris.
+</p>
+
+<p>
+Quisque ac cursus tellus. Sed sit amet nisi pulvinar eros gravida tempus in quis ipsum. Pellentesque vulputate, nisi in congue lobortis, lacus purus sollicitudin massa, nec tristique elit lacus in diam.
+</p>
+
+<div class="caption">
+<img src="apartment1.jpg">
+</div>
+
+<p>Vivamus nec turpis ut lectus scelerisque rutrum. Donec convallis odio eros, non porta risus iaculis sed. </p>
+
+<p>Quisque hendrerit dictum tempus. Aliquam at vestibulum nunc. Phasellus sagittis mi purus, mollis rutrum nisl hendrerit vel. Nulla convallis sapien vel nisl condimentum, non aliquet nisl rutrum. </p>
+
+<p>Donec a augue diam. </p>
+
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames eget.</p>
+
+<p>Etiam et justo id libero lobortis dapibus. In quis est ultrices, auctor augue sit amet, tincidunt urna. Donec quis scelerisque est. </p>
+
+</section>
+</article>
+
+<section class="bigquote">
+<em>"Vivamus vulputate nibh laoreet luctus pellentesque. Aenean ac dui vel turpis vestibulum aliquam. Quisque feugiat dui in sapien aliquam lacinia." </em>
+</section>
+
+<article>
+<section id="middlesection">
+
+<p>Cras malesuada consectetur adipiscing. Nullam vulputate elit ut metus consequat, elementum egestas nisi ullamcorper.</p> 
+
+<p>Suspendisse ultrices, lacus sit amet rutrum fringilla, libero mi porta erat, eget mattis eros lorem et est.</p> 
+
+<p>Duis consectetur turpis ut nisi condimentum, a aliquam lorem cursus. Nam et bibendum odio. </p>
+
+<p>Maecenas lobortis massa nunc, et malesuada velit malesuada a. Curabitur bibendum nisl eget lectus scelerisque, non lacinia mi adipiscing. </p>
+
+<div style="border: 1px solid #000;">
+<blockquote>
+<p>"Maecenas nec tincidunt arcu, vel pretium nunc."</p>
+
+<p>"Donec a augue diam."</p>
+
+<p>"Sed laoreet turpis a risus aliquam, et vestibulum leo pharetra."</p>
+
+<p>"Phasellus sagittis mi purus, mollis rutrum nisl hendrerit vel."</p>
+
+</blockquote>
+</div>
+
+<p>Suspendisse ornare, orci gravida imperdiet adipiscing, eros tortor dictum mauris, in viverra arcu leo vitae augue. Nam volutpat massa a purus ultricies ullamcorper.</p>
+
+<p>Sed metus erat, adipiscing nec leo sit amet, ultricies adipiscing lacus. Integer tempus urna ac leo mollis, nec viverra sapien suscipit. </p>
+
+<p>Mauris at elit ligula. Vivamus eget viverra arcu. Proin fermentum fermentum augue, ac tincidunt nibh. Nulla placerat lectus a rutrum mollis.</p>
+
+<div class="caption">
+<img src="caterpillar1.jpg">
+<br />
+Vivamus nec turpis ut lectus scelerisque rutrum. Donec convallis odio eros, non porta risus iaculis sed.
+</div>
+
+<p>Nam rutrum elementum lorem, quis accumsan augue. Mauris in turpis nulla. Suspendisse ac dui faucibus, lobortis libero nec, molestie leo.</p> 
+
+<p>Mauris eu nunc semper, lobortis dui ornare, blandit odio.</p>
+
+<p>Duis tristique, velit sed tempus rhoncus, lorem lectus pharetra risus, in ullamcorper velit ante nec tortor. Vestibulum ultricies at libero sed posuere. Integer facilisis at ipsum in vulputate. Quisque consequat non nisl et aliquet. </p>
+
+<p>Donec a augue diam.</p>
+
+<p>Maecenas eleifend risus felis, id vehicula erat laoreet sit amet. Vestibulum tempor sem feugiat, mollis ipsum ut, vulputate nulla. Donec eget pretium nisl.</p>
+
+<div class="caption">
+<center>
+<img src="lakeerie1.jpg">
+<br />
+In ac quam id nisi porta tincidunt.
+</center>
+</div>
+
+
+<h1>Making Pizza</h1>
+
+<p>These recipes make the "Margherita" style pizza. Each dough recipe makes four pizzas that are at least 10 to 12 inches in diameter. If using a rectangle baking stone instead of the more square-ish pizza stone, the pizza dough will be stretched into an oval shape.</p>
+
+<p><more /></p>
+
+<p>A baking stone is typically 12 inches by 14 inches and a half-inch thick. A quality pizza stone is 16 inches by 18 inches and 3/4 inch thick.</p>
+
+<p>It's best to stretch the dough by hand when making a pizza. A rolling pin "blisters" the dough, causing the dough not to bubble up as much when baking. A rolling pin can make the final crust tougher. When stretching by hand, the dough should be thicker along the edges.</p>
+
+<p>Ingredients are weighed with a digital scale.</p>
+
+
+
+<a name="100-Allpurpose-Flour"></a>
+<h2 id="articletitle"><a href="#100-Allpurpose-Flour">100% All-purpose Flour</a></h2>
+
+<p>This dough will be very easy to stretch by hand, and the thickness of the dough in the middle of the pizza can be made as thin as paper or a credit card. </p>
+
+<p><ins>Ingredients:</ins></p>
+
+<ul>
+<li>all-purpose flour : 550 grams</li>
+<li>water : 360 grams</li>
+<li>fine-grain sea salt : 11 grams</li>
+<li>dry active instant yeast : 4 grams</li>
+</ul>
+
+<p>I use King Arthur all-purpose flour. Bread flour is recommended often, but I've not tried it.</p>
+
+
+<a name="White-Whole-Wheat-Flour"></a>
+<h2 id="articletitle"><a href="#White-Whole-Wheat-Flour">White Whole Wheat Flour</a></h2>
+
+<p>If you want a little more flavor in the crust, then incorporate some whole grain flour, such as rye, spelt,  or whole wheat.Too much whole grain flour, however, will make the dough difficult to stretch when shaping the pizzas. </p>
+
+<p>This recipe uses white whole wheat flour.</p>
+
+<p>Since whole grain flour has less gluten and less stretching ability, this recipe uses more total flour, so that the same size pizza can be made. The crust will be a little thicker and chewier, but the flavor is much better. </p>
+
+<p>This dough can still be stretched by hand, but it won't stretch as easily as the 100 percent all-purpose flour recipe. It may take you a little longer to shape this dough.</p>
+
+<p>Whole wheat flour is more absorbent than all-purpose flour, so a greater percentage of water is used in this recipe.</p>
+
+<p><ins>Ingredients:</ins></p>
+
+<ul>
+<li>all-purpose flour : 500 grams</li>
+<li>white whole wheat flour : 150 grams</li>
+<li>water : 455 grams</li>
+<li>fine-grain sea salt : 13 grams</li>
+<li>dry active instant yeast : 5 grams</li>
+</ul>
+
+<p>Most of the time, whole wheat flour is made from red wheat. But white whole flour is made from a type of wheat that lacks the red pigment, which gives red whole wheat its grainy, somewhat bitter, "healthy" taste. Some people dislike the grainy taste of red whole wheat.</p>
+
+<p>White whole wheat flour is less known among home bakers. The taste is much milder than red whole wheat. But white whole wheat contains the same nutritional value as red whole wheat. Because of its milder flavor, white whole wheat is a good way to sneak whole grain healthiness into baking foods.</p>
+
+<p>I use King Arthur white whole wheat flour.</p>
+
+<p>I have not tried the regular red whole wheat flour in a pizza recipe. Usually, the word "red" is not included on a package of whole wheat flour. The package may only say "Whole Wheat." </p>
+
+<p>But a white whole wheat flour package will be clearly marked with "White Whole Wheat."</p>
+
+
+<a name="Spelt-Flour"></a>
+<h2>Spelt Flour</h2>
+
+<p>We bought spelt "berries" at the Phoenix Earth Food Co-op, and we milled our own spelt flour at home, using a Vitamix. It took about 40 seconds to ground the spelt berries into a fine-grain flour. </p>
+
+<p>Spelt is a whole grain. It contains less gluten than whole wheat, so this recipe contains more water and flour, but it still makes four pizzas.</p>
+
+<p><ins>Ingredients:</ins></p>
+
+<ul>
+<li>spelt flour : 180 g</li>
+<li>all-purpose flour : 540 g</li>
+<li>water : 500 g</li>
+<li>fine-grain salt : 14 g</li>
+<li>dry active instant yeast : 7 g</li>
+</ul>
+
+<p>Spelt flour seems less absorbent than whole wheat, so the dough will be a bit stickier or wetter than the other two recipes. One option I plan to try in the future is using less water, like 480 grams instead of 500 grams. Compared to whole wheat, I have less experience baking with spelt.</p>
+
+<p>Spelt has a mild, sweet, nutty flavor. I like the spelt flavor a little better than the white whole wheat, but both whole grains provide fine flavor to the crust.</p>
+
+<p>Spelt will also make a crust that is a little thicker and chewier than a dough recipe that contains 100 percent all-purpose flour. The spelt dough is still fairly easy to stretch by hand, but it will take longer to stretch than a dough made with 100 percent all-purpose flour.</p>
+
+<p>If unable to mill flour at home, the co-op sells spelt flour, which I have used in the past for bread recipes. Some grocery stores may sell a package of Bob's Red Mill spelt flour.</p>
+
+
+<a name="Making-the-Dough"></a>
+<h2>Making the Dough</h2>
+
+<ol>
+<li>Mix dry ingredients together in a bowl.</li>
+<li>Add water to dry ingredients.</li>
+<li>Mix with hand whisk for 1 to 2 minutes.</li>
+<li>Knead dough in bowl for 1 minute to make sure water and flour are incorporated into a sticky, shaggy blob.</li>
+<li>Dump dough on counter and cover with bowl for 20  minutes. This rest period is known as autolyse where flour absorbs water and gluten strands develop. </li>
+<li>Knead dough for 5 minutes on the counter. <small>( <strong>Note:</strong> the spelt flour version which produces a wetter dough may require 7 or 8 minutes of kneading.)</small></li>
+<li>Place dough in a large Pyrex bowl or something similar that was lightly oiled with olive oil and cover with plastic.</li>
+<li>Let dough ferment at room temp for around 2 hours. <small>(1.5 to 2 hours in a warm house and 3 to 4 hours in a cold house.)</small> The fermented dough should at least double in size. It will probably triple in size. It will be large and airy. The fermentation time also depends upon whether you use refrigerator-temped water or room-temped water. Cold water will increase the fermentation time required.</li>
+<li>After fermentation, lightly oil the counter with olive oil and dump the dough onto the counter.</li>
+<li>Shape into one mass and divide it equally by size or weight into 4 pieces.</li>
+<li>Now it's time to shape or fold each piece of dough into a ball, which is tough to explain. After dividing the dough into 4 pieces, each piece of dough may exist in an irregular triangle-like shape. I pick up the ends and edges of the dough blob and bring these edges toward the center. Imagine a basket ball resting in the middle of a blanket, and then picking up the blanket at the edges and gathering the edges and corners toward the middle. With the edges of the dough stretched and gathered toward the middle, I pinch these dough edges together to seal them up. Then I place the dough seam side down and cup my hands around the dough and shape the dough into a round by moving my hands in opposite directions. The hands will shape the dough ball horizontally while at the same time pulling the dough downward toward the underside of the dough. This tightens up the dough on the outside. The dough is forgiving. This does not have to be perfect. Just shape each blob of dough into a ball that's the size of a tennis ball or baseball.</li>
+<li>Set the dough balls seam-side down on a lightly-floured counter or onto a lightly-floured board. Lightly flour the tops of the dough balls and loosely cover them with plastic. The flour should prevent the dough from sticking to the plastic. </li>
+<li>Let dough balls proof at room temp for 1 to 2 hours, depending upon the house temperature. The dough balls will dramatically increase in size while proofing.</li>
+<li>If not baking soon after proofing, then wrap the dough balls in plastic and place in a plastic bag or container and set in the refrigerator. The refrigerated dough will be good to use for the next 1 to 3 days. When it's time to use, remove from frig and allow dough to warm at room temp for at least an hour. Overnight refrigeration may help the dough develop more flavor, but I cannot tell a difference. It's fun to bake at least one of the freshly proofed dough balls immediately after proofing because the dough is so airy. The crust bubbles up more when baking immediately after proofing, but dough that has existed in the frig for two or three days also makes excellent pizza.</li>
+</ol>
+
+
+<a name="Baking"></a>
+<h2>Baking</h2>
+
+<ol>
+<li>Place baking stone on rack in oven. I use the lowest or second lowest rack level.</li>
+<li>Preheat oven to at least 500 degrees for 30 minutes with the stone in the oven.</li>
+<li>Flatten one proofed dough ball into a saucer plate-sized disk.</li>
+<li>Drape dough disk onto the backs of the knuckles of both hands.</li>
+<li>Slowly stretch and work the dough  with the backs of the knuckles.</li>
+<li>You can also grab the dough along the edge and let gravity stretch it. Keep working around the dough to form the desired shape and to keep it relatively the same thickness (or thinness for this pizza.) The dough will get so thin in some areas that you can see light through it. If a hole forms, pinch dough together and let it rest a bit on the counter and then resume shaping.</li>
+<li>Scatter flour onto a wooden peel. This allows the dough to slide easily from the peel to the stone.</li>
+<li>You can stretch the dough some more on the wooden peel. The dough will spring back some.  I try to shape the dough so that it's a little thicker around the outer edge.</li>
+<li>Add a thin layer of sauce. Keep the sauce thinner in the middle. Leave about an inch of sauce-free area along the outer edge of the dough, so that the dough can bubble up. </li>
+<li>Add chunks of fresh mozzarella cheese. This is not the shredded cheese purchased in a bag. Fresh mozz is usually shaped like a small barrel and wrapped tightly in plastic. You'll have to slice or tear chunks of this mozz. We make our own ricotta cheese, and if we have some on hand, I'll use this instead of mozz. We discovered a local farmer who makes goat cheese, and sometimes, we use this on our pizza instead of mozz or ricotta.</li>
+<li>Drizzle or pour on some excellent "finishing" type of olive oil.</li>
+<li>Sprinkle on some coarse grey sea salt.</li>
+<li>(Add any other ingredients that you would like. I keep it simple and primarily use these few ingredients.  We grow eggplant in our garden, and when it's available, I'll place thin slices of eggplant on our pizza.)</li>
+<li>Check to make sure the pizza still slides easily on the wooden peel. If not, gently lift dough and add more flour. It's frustrating when the dough sticks to the peel.</li>
+<li>Slide dough onto stone. This is tricky to do with the smaller baking stone, since sometimes my dough will be as long or even longer than the stone. This is where having the larger pizza stone helps a lot.</li>
+<li>Bake at 500 degrees for 7 to 10 minutes or when you think it's done. </li>
+<li>The outer edge should bubble up, and some charring may occur, which is nice.</li>
+<li>When done baking, place pizza on a cooling rack, and immediately add the fresh basil leaves if available. Don't places basil leaves onto the pizza prior to baking, since the high heat will shrivel the leaves to almost nothing. The pizza surface is still plenty hot enough after baking that the fresh basil leaves will "cook" a little. We maintain a basil plant outdoors during the warmer time of the year.</li>
+<li>After at least five minutes of cooling, cut and enjoy. Depending upon the dough recipe and how you stretched the dough, the crust may be credit card thin in some areas. The baked crust will be a bit firmer and thicker near the outside edge and a little floppy toward the center.</li>
+</ol>
+
+
+<a name="Sauce"></a>
+<h2>Sauce</h2>
+
+<p>Homemade sauce is best, but a quick sauce idea is to buy a can of San Marzano Crushed Tomatoes. The can will have a blue-purple band. The whole tomato version will have the green band. </p>
+
+<p>Open the can and spread the crushed tomatoes on the dough. That's it. Straight from the can to the dough. </p>
+
+<p>Depending upon your taste preference, you may not need to enhance the sauce, since olive oil and sea salt are used as toppings. But experimentation is fun too, such as cooking the sauce down a little in a pot with added herbs, spices, honey, etc.</p>
+
+
+
+</section> <!-- close id=middlesection -->
+
+<section id="bottomsection">
+<p>
+Contact Nick Adams at: <a href="#">nickadams@thetrout.com</a>, 555-555-5555, or on Twitter <a href="#">@nonexistent</a>.
+</p>
+
+<p>
+Published: Friday, 1/31/2014 
+</p>
+
+</section>
+
+</article>
+
+<footer>
+<div id="footermenu">
+<ul>
+<li><a title="About"     href="#">About</a></li> 
+<li><a title="Help"      href="#">Help</a></li> 
+<li><a title="Contact"   href="#">Contact</a></li> 
+<li><a title="Archives"  href="#">Archives</a></li> 
+<li><a title="Search"    href="#">Search</a></li> 
+</ul>
+</div>
+<p>
+current date: Feb 2, 2014 - 3:47 p.m. EST
+</p>
+</footer> <!-- close id=footermenu -->
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
+<script type="text/javascript" src="jquery.mmenu.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('nav#menu').mmenu({
+            position: "left",
+            zposition: "front"
+        });
+    });
+</script>
+
+</div> <!-- end id=page used by mmenu -->
+
+</body>
+</html>
+
+
+
+
