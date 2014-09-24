@@ -25,3 +25,10 @@ These pages use Font Awesome icons for menu links at the top corners. Google Fon
 * [Article Five F](http://testcode.soupmode.com/article/article5f.html) - Open Sans, 125%
 * [Article Five G](http://testcode.soupmode.com/article/article5g.html) - Open Sans, 130%
 
+These pages use real text from my pizza-making blog post, except that the text contained within the sample pages below is incomplete and out of order. It's not the entire post. It's just placeholder text. The same photos are used as placeholders too.
+
+* [Pizza 1](http://testcode.soupmode.com/article/pizza1.html) - Open Sans, 125%
+* [Pizza 2](http://testcode.soupmode.com/article/pizza2.html) - Merriweather, 1.2em 
+* [Pizza 3](http://testcode.soupmode.com/article/pizza3.html) - Droid Serif, 125%
+
+
