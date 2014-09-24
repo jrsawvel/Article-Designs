@@ -66,6 +66,21 @@ article {
     max-width: 46em;  /* 736 px */
 }
 
+.headingtext a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.headingtext a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+.headingtext a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
 #topsection {
     color: #000000;
     margin: 0;
