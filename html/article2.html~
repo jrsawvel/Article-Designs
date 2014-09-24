@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
 <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
-<title>Article Test 3</title>
+<title>TB Test</title>
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400" />
 <link rel="stylesheet" type="text/css" href="article.css"  />
 <link type="text/css" rel="stylesheet" href="jquery.mmenu.css" />
@@ -115,12 +115,16 @@ header a {
 }
 
 .mm-menu {
-    background: #000; 
+    background: #666;
+/* simple */
+background: #fff; 
 } 
 
 .mm-list {
     font-size: 1em;
-    color: #ddd;
+    color: #ccc;
+/* simple */
+color: #888;
     text-align: left;
 }
 
@@ -128,8 +132,12 @@ header a {
 }
 
 .mm-list a:hover {
-    color: #fff;
-    text-decoration: underline;
+    background: #777; 
+/* simple */
+background: #fff;
+/* simple */
+color: #000;
+text-decoration: underline;
 }
 
 .mm-list > li:not(.mm-subtitle):not(.mm-label):not(.mm-noresults)::after {
@@ -422,7 +430,7 @@ current date: Feb 2, 2014 - 3:47 p.m. EST
     $(function() {
         $('nav#menu').mmenu({
             position: "left",
-            zposition: "next"
+            zposition: "front"
         });
     });
 </script>
