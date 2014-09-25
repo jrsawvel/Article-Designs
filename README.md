@@ -31,4 +31,22 @@ These pages use real text from my pizza-making blog post, except that the text c
 * [Pizza 2](http://testcode.soupmode.com/article/pizza2.html) - Merriweather, 1.2em 
 * [Pizza 3](http://testcode.soupmode.com/article/pizza3.html) - Droid Serif, 125%
 
+These sample pages contain an actual Toledo Blade news story. I do not have their permission to reproduce the content, so this may not stay here. I wanted an example of real news story. I would pay for content displayed like this.
+
+Here's the Toledo Blade story  
+<http://www.toledoblade.com/Police-Fire/2014/01/31/Last-Alarm-rings-for-fallen-heroes.html>
+
+My examples:
+
+* [TB 1](http://testcode.soupmode.com/article/tb1.html) - Open Sans, 125%
+* [TB 2](http://testcode.soupmode.com/article/tb2.html) - Open Sans, 1.2em 
+* [TB 3](http://testcode.soupmode.com/article/tb3.html) - Merriweather, 1.15em 
+* [TB 4](http://testcode.soupmode.com/article/tb4.html) - Merriweather, 1.2em
+* [TB 5](http://testcode.soupmode.com/article/tb5.html) - Droid Serif, 1.2em
+
+I like the font family and size setup for numbers 2 and 3 the best. I think that site owners should include a text-resizer option on their sites, so that users can adjust the text size, according to their eyes and the devices that they are using. 
+
+It's easy to change the font size for a web page when using a browser on a desktop or laptop, but most reading today is done on a mobile device. Site owners should make it simple for users to change the font size when the page is being viewed on a phone or tablet. 
+
+
 
