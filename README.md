@@ -54,5 +54,6 @@ More examples:
 * [post 2](http://testcode.soupmode.com/article/post2.html) - Libre Baskerville, Open Sans, 1.2em 
 * [post 3](http://testcode.soupmode.com/article/post3.html) - Droid Serif, Open Sans, 1.2em
 * [post 4](http://testcode.soupmode.com/article/post4.html) - Open Sans, 1.2em
+* [post 5](http://testcode.soupmode.com/article/post5.html) - Lora, Open Sans, 1.25em
 
 
