@@ -48,5 +48,11 @@ I like the font family and size setup for numbers 2 and 3 the best. I think that
 
 It's easy to change the font size for a web page when using a browser on a desktop or laptop, but most reading today is done on a mobile device. Site owners should make it simple for users to change the font size when the page is being viewed on a phone or tablet. 
 
+More examples:
+
+* [post 1](http://testcode.soupmode.com/article/post1.html) - default web fonts Georgia and Arial, 1.3125em
+* [post 2](http://testcode.soupmode.com/article/post2.html) - Libre Baskerville, Open Sans, 1.2em 
+* [post 3](http://testcode.soupmode.com/article/post3.html) - Droid Serif, Open Sans, 1.2em
+* [post 4](http://testcode.soupmode.com/article/post4.html) - Open Sans, 1.2em
 
 
