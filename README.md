@@ -56,4 +56,8 @@ More examples:
 * [post 4](http://testcode.soupmode.com/article/post4.html) - Open Sans, 1.2em - FAV
 * [post 5](http://testcode.soupmode.com/article/post5.html) - Lora, Open Sans, 1.25em - FAV
 
+Simple page that uses Georgia and Arial:
+
+* [simple 2](http://testcode.soupmode.com/simple2.html)
+
 
