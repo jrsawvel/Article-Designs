@@ -1,0 +1,627 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<title>Simple 2 Test</title>
+<meta charset="UTF-8" /> 
+<!--[if lt IE 9]> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<meta name="generator" content="Scaup" />
+<meta name=viewport   content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="http://scaup.soupmode.com/css/normalize.css"  /> 
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<style>
+body {
+    background: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}    
+
+h1, h2, h3, h4 {
+    color: #000000;
+    text-align: center;
+}
+
+#header {
+    text-align: left;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 100; 
+    float: left;
+    width: 100%;
+    left: auto;
+    position: absolute;
+    height: 20px;
+}
+
+#article {
+    position: relative;
+    width:90%;
+    max-width: 700px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding: 0;
+}
+
+#article-body {
+    font-family: Georgia, serif;
+    /* all produce the same on both firefox and chrome but the pixel works less on kindle e-reader where it's better
+       to use percent or em 
+         font-size: 21px;
+         font-size: 131.25%;
+         font-size: 1.3125em;
+    */
+    font-size: 1.3125em;
+    color: #333;
+    line-height: 165%;
+    /* letter-spacing: .2px; */
+    letter-spacing: 0px;
+    word-spacing: 1px;
+    margin: 0;
+}
+
+#article-body p {
+    margin: 0 0 40px 0;
+    padding: 0;
+}
+
+#article-body li {
+    padding-bottom: 15px;
+}
+
+#search-link {
+    float: right;
+    padding-right: 10px;
+}
+
+#home-link {
+    float: left;
+    padding-left: 10px;
+}
+
+.greytext {
+    line-height: 150%;
+}
+.greytext a {
+    color: #888888;
+    text-decoration: none;
+}
+.greytext a:visited {
+    color: #888888;
+}
+.greytext a:hover {
+    color: #000000; 
+    text-decoration: underline;
+}
+#post-min-read {
+    float:right; 
+    font-size:80%; 
+    margin-top:0px;
+}
+h1, h2, h3, h4, h5 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    padding: 0;
+    margin: 0 0 40px 0;
+    font-size: 2em;
+    font-size: 35px;
+}
+h2 {
+    font-size: 1.5em; 
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 1.4em; 
+    font-size: 27px;
+}
+
+h4 {
+    font-size: 1.3em; 
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 1.2em; 
+    font-size: 24px;
+    margin:0;
+    padding:0;
+}
+
+h2, h3, h4 {
+    /* margin: 50px 0 10px 0; */
+    margin: 60px 0 40px 0;
+    padding: 0;
+}
+blockquote {
+    margin-left: .6em;
+    padding-left: 1em;
+    border-left: 2px solid #666;  
+}
+hr.shortgrey {
+   border: 0; 
+   height: 1px; 
+   background: #ddd;
+   width: 25%;
+   margin-top:2em;
+   margin-bottom:2em;
+}
+big {
+    color: #888;
+}
+strong {
+    color: #000000;
+}
+
+a {
+    color: #b71c1c; /* dark red */
+    color: #0080FF; /* light blue */
+    color: #0000ff;
+     text-decoration: underline;  
+}
+a:visited {
+    color: #b71c1c;
+    color: #0080FF;
+    color: #cc3399;
+    text-decoration: underline; 
+}
+a:hover {
+    text-decoration: underline;
+    color: #f00;
+}
+.headingtext a {
+    text-decoration: none;
+    color: #0000ff;
+}
+
+.headingtext a:visited {
+    text-decoration: none;
+    color: #0000ff;
+}
+
+.headingtext a:hover {
+    text-decoration: underline;
+    color: #0000ff;
+}
+
+.highlighted {
+    background: #e1f5fe;
+    border-left: none;
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#article-body code {
+    font-size:13px;
+    background: #f8f8f8;
+    padding: 2px 5px 2px 5px;
+    border: 1px solid #dddddd;
+}
+
+#article-body pre {
+    line-height: 1em; 
+    background: #f8f8f8;
+}
+
+#article-body pre code {
+    padding:0;
+    border:none;
+}
+.fenceClass pre {
+    white-space: pre;
+}
+.fenceClass {
+    overflow-x: scroll;
+    background: #f8f8f8;
+    border: 1px solid #dddddd;
+    padding: 2px 5px 2px 5px;
+}
+/* 43.75em = 700px */
+@media only screen and (max-width: 43.75em) {
+ h1 {
+        font-size: 28px; 
+    }
+ h2 { 
+        font-size: 25px;
+    }
+ h3 { 
+        font-size: 22px;
+    }
+#article {
+    margin-top: 30px;
+ }
+ big {
+     font-size: 120%;
+     color: #444;
+ }
+#post-min-read {
+    display: none;
+}
+}
+</style>
+</head>
+<body>
+
+
+<!-- header -->
+<!-- nav -->
+<div id="header">
+<div class="greytext">
+<div id="search-link"><a title="Search" href="/searchform">search</a></div>
+<div id="home-link"><a title="Home Page" href="/">home</a></li></div> 
+</div>
+</div>
+<!-- /nav -->
+<!-- /header -->
+
+
+<!-- article -->
+<div id="article">
+
+<!-- section article header -->
+<div id="post-min-read">
+2 min
+</div>
+
+<a name="Lorem_Ipsum_Dolor_Sit_Amet"></a>
+<h1 class="headingtext"><a href="/simple2.html">Lorem Ipsum Dolor Sit Amet</a></h1>
+<!-- /section article header -->
+
+<!-- section article body -->
+<div id="article-body">
+<p><img src="http://farm4.static.flickr.com/3156/2614312687_3fe4cae2a9_o.jpg" alt="" /></p>
+
+<p><em><big>Ut enim ad minim veniam quis nostrud exercitation ullamco.</big></em></p>
+
+<p><more /></p>
+
+<p><hr class="shortgrey" /></p>
+
+<p>
+DD and I arrived at <a href="http://en.wikipedia.org/wiki/Oliver_House,_Toledo,_Ohio">The Oliver House</a> around 7:40 pm. We dined at <a href="https://www.facebook.com/pages/Mutz/182052109265">Mutz</a> and sat outside in the small, shared courtyard area surrounded by a four-story brick building on all sides. Irregular-shaped courtyard. Tight, cozy area. Nice. We sat next to a window for the <a href="http://www.mbaybrew.com/petit-fours-patisserie/">Petit Fours Patisserie.</a>
+</p>
+
+<p>
+It was a fall-like evening. It felt like a high school football Friday night in September. Toledo temps at about 8:00 p.m. were in the upper 60s. It was breezy at times, even down in the courtyard. Partly cloudy sky. Amazingly comfy for mid-July.
+</p>
+
+<p>
+We missed the <a href="http://www.mbaybrew.com/">Maumee Bay Brewing Company's</a> limited-release <a href="http://www.mbaybrew.com/product/blackberry-belgian-wit/">Blackberry Belgian Wit.</a>
+</p>
+
+<p>Mauris eu luctus lorem. Sed quis varius leo. In in pharetra felis. Donec ut molestie lectus. Aliquam ut lectus id quam pellentesque vehicula et ac erat. Ut pretium pellentesque lectus, sit amet sodales urna elementum et. Aliquam in ipsum in tortor varius molestie.</p>
+
+<p>Cras blandit lacus eros, quis feugiat orci porta et. Etiam euismod mauris in nunc pulvinar, vel dapibus diam pharetra. Curabitur eget mauris pellentesque, venenatis erat at, bibendum mauris. Aliquam non nibh dictum, egestas risus vitae, luctus leo. Ut in enim et libero feugiat aliquam.</p>
+
+<p><hr class="shortgrey" /></p>
+
+<p><center><em><big>Duis mattis elementum mauris eget varius etiam pellentesque commodo nunc ut facilisis.</big></em></center></p>
+
+<p><hr class="shortgrey" /></p>
+
+<p>Maecenas nec tincidunt arcu, vel pretium nunc. Aenean egestas lectus a nulla ultrices sodales. Nunc aliquam commodo iaculis. Donec sollicitudin tincidunt augue id dignissim. Mauris dignissim porttitor libero nec ultrices. </p>
+
+<p>Duis gravida, dui quis sagittis feugiat, ante mi commodo augue, sed accumsan justo augue id lorem. Suspendisse fringilla consectetur libero, non auctor nisl pulvinar vel:</p>
+
+<ul>
+<li>Mauris at elit ligula. Vivamus eget viverra arcu. Proin fermentum fermentum augue, ac tincidunt nibh. Nulla placerat lectus a rutrum mollis. Maecenas tempus quam quis sem accumsan, et mollis metus semper. Nam rutrum elementum lorem, quis accumsan augue. Mauris in turpis nulla. Suspendisse blandit est egestas enim pretium, a venenatis dui varius. Aliquam at leo vel erat porttitor interdum ut sed metus.</li>
+<li>Phasellus eget nulla molestie, sagittis erat viverra, iaculis enim. Sed bibendum nulla in ipsum semper pretium. </li>
+<li>Curabitur sit amet libero et neque suscipit consequat sed id magna. Proin posuere commodo interdum. </li>
+</ul>
+
+<p>Ut ac elementum augue. Etiam ultrices leo ante, at egestas massa pulvinar euismod. Morbi sit amet erat vel massa mattis condimentum. Pellentesque in fringilla est. Donec at lacus eleifend nulla sagittis lacinia.</p>
+
+<p>In dignissim tortor leo, quis placerat ante porta ac. Mauris tempor elit sed ipsum egestas, ultricies rutrum mi elementum:</p>
+
+<ul>
+<li>Integer aliquam, quam non vehicula scelerisque, orci nisl imperdiet felis, non gravida nunc eros quis neque. Nullam vel elit eleifend, cursus leo varius, auctor neque. Donec placerat ligula ac leo porttitor, id bibendum arcu posuere. Morbi id quam semper, aliquet ipsum eget, laoreet erat. </li>
+<li>Cras malesuada consectetur adipiscing. Nullam vulputate elit ut metus consequat, elementum egestas nisi ullamcorper. Proin sagittis diam velit, vel adipiscing tellus aliquam vitae. </li>
+<li>Suspendisse ultrices, lacus sit amet rutrum fringilla, libero mi porta erat, eget mattis eros lorem et est. Praesent lorem lectus, posuere id enim sit amet, scelerisque dignissim mauris. </li>
+<li>Quisque ac cursus tellus. Sed sit amet nisi pulvinar eros gravida tempus in quis ipsum. Pellentesque vulputate, nisi in congue lobortis, lacus purus sollicitudin massa, nec tristique elit lacus in diam. </li>
+</ul>
+
+<p><hr class="shortgrey" /></p>
+
+<p><center><em><big>Vivamus nec turpis ut lectus scelerisque rutrum. Donec convallis odio eros, non porta risus iaculis sed.</big></em></center></p>
+
+<p><hr class="shortgrey" /></p>
+
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames eget:</p>
+
+<blockquote><p><em>Vivamus vulputate nibh laoreet luctus pellentesque. Aenean ac dui vel turpis vestibulum aliquam. Quisque feugiat dui in sapien aliquam lacinia. Cras malesuada consectetur adipiscing.</em></p></blockquote>
+
+<p>Suspendisse ultrices, lacus sit amet rutrum fringilla, libero mi porta erat, eget mattis eros lorem et est. Duis consectetur turpis ut nisi condimentum, a aliquam lorem cursus. Nam et bibendum odio. </p>
+
+<a name="list-tests">
+<h2 class="headingtext"><a href="/list-tests">List Tests</a></h2>
+
+<p>
+A little bullet-point action.
+</p>
+
+<ul>
+<li>Bullet One</li>
+<li>Bullet Two</li>
+<li>Bullet Three</li>
+<li>Bullet Four</li>
+</ul>
+
+<p>
+Now some ordered listing.
+</p>
+
+<ol>
+<li>Number One</li>
+<li>Number Two</li>
+<li>Number Three</li>
+<li>Number Four</li>
+<li>Number Five</li>
+</ol>
+
+<p>
+Duis gravida, dui quis sagittis feugiat, ante mi commodo augue, sed accumsan justo augue id lorem. Suspendisse fringilla consectetur libero, non auctor nisl pulvinar vel.
+</p>
+
+<a name="blockquote-test">
+<h3 class="headingtext"><a href="/blockquote-test">Blockquote Test</a></h3>
+
+<blockquote>
+<p>
+Cras malesuada consectetur adipiscing. Nullam vulputate elit ut metus consequat, elementum egestas nisi ullamcorper. Proin sagittis diam velit, vel adipiscing tellus aliquam vitae.
+</p>
+
+<p>
+Suspendisse ultrices, lacus sit amet rutrum fringilla, libero mi porta erat, eget mattis eros lorem et est. Praesent lorem lectus, posuere id enim sit amet, scelerisque dignissim mauris. 
+</p>
+</blockquote>
+
+<p>using H5 as the header text for each paragraph. the H5 is styled within <span class="caps">CSS </span>file.</p>
+
+<a name="Problem"></a>
+<h5 class="headingtext"><a href="#Problem">Problem</a></h5>
+
+<p>Children from low-income neighborhoods enter Kindergarten 60 percent behind in learning development compared to their middle-class counterparts.</p>
+
+<a name="Solution"></a>
+<h5 class="headingtext"><a href="#Solution">Solution</a></h5>
+
+<p>Baby U gives parents the tools to reverse this education gap, so that every child in the South Toledo Kids Zone can start school ready to learn.</p>
+
+
+<a name="Why"></a>
+<h5 class="headingtext"><a href="#Why">Why</a></h5>
+
+<p>We believe that to change a neighborhood for the better, we must nurture it's greatest asset: The Family. Baby U educates and strengthens our urban families. Read more about us.</p>
+
+
+
+
+<p>the output from my custom q. and q.. block formatter:</p>
+
+<div class="highlighted">
+<p>temps could be already on the way down by daybreak wednesday... or it could be 50 degrees.</p>
+
+<p>other possibilities will have to [be] examined as confidence increases and we get more comfortable with the timing such as the risk of flooding and the threat of thunderstorms.</p>
+
+<p>unfortunately... all signs point to a return to much colder weather again after the cold front goes through on wednesday.</p>
+
+<p>a trailing short wave could bring lingering snow showers into thursday.</p>
+</div>
+
+
+
+<p>testing a code block that uses the HTML pre and code tags</p>
+
+<pre><code>package Format;
+
+use strict;
+use warnings;
+
+use Text::MultiMarkdownJRS;
+use Text::Textile;
+use LWP::Simple;
+use HTML::TokeParser;
+
+sub hashtag_to_link {
+    my $str = shift;
+
+    $str = &quot; &quot; . $str . &quot; &quot;; # hack to make regex work
+
+    my @tags = ();
+    my $tagsearchstr = &quot;&quot;;
+    my $tagsearchurl = Config::get_value_for(&quot;cgi_app&quot;) . &quot;/tag/&quot;;
+    if ( (@tags = $str =~ m|\s#(\w+)|gsi) ) {
+            foreach (@tags) {
+                next if  StrNumUtils::is_numeric($_); 
+                $tagsearchstr = &quot; &lt;a href=\&quot;$tagsearchurl$_\&quot;&gt;#$_&lt;/a&gt;&quot;;
+                $str =~ s|\s#$_|$tagsearchstr|is;
+        }
+    }
+    $str = StrNumUtils::trim_spaces($str);
+    return $str;
+}
+
+sub clean_title {
+    my $str = shift;
+    $str =~ s|[-]||g;
+    $str =~ s|[ ]|-|g;
+    $str =~ s|[:]|-|g;
+    $str =~ s|--|-|g;
+    # only use alphanumeric, underscore, and dash in friendly link url
+    $str =~ s|[^\w-]+||g;
+    return $str;
+}
+
+sub permit_some_html_tags {
+    my $str = shift;
+
+    if ( $str =~ m|&amp;lt;[\s]*iframe(.*?)&amp;gt;|i ) {
+        my $tmp = $1;
+        $str =~ s|&amp;lt;[\s]*iframe\Q$tmp&amp;gt;|\[iframe$tmp\]|i;   
+    }
+
+    my @tags = split(/(\s+)/, Config::get_value_for(&quot;valid_html&quot;));
+
+    foreach (@tags) {
+        my $tag = $_;
+        while ( $str =~ m|&amp;lt;[\s]*$tag(.*?)&amp;gt;|i ) {
+            my $tmp = $1;
+            $str =~ s|&amp;lt;[\s]*$tag\Q$tmp&amp;gt;|&lt;$tag$tmp&gt;|i;   
+        } 
+
+        if ( $str =~ m|&amp;lt;[\s]*/$tag&amp;gt;|i ) {
+            $str =~ s|&amp;lt;[\s]*/$tag&amp;gt;|&lt;/$tag&gt;|ig;   
+        }
+    }
+
+    # for tables with textile
+    $str =~ s/\|&amp;gt;\. /\|&gt;\. /g;
+    $str =~ s/\|&amp;lt;\. /\|&lt;\. /g;
+    $str =~ s/\|&amp;lt;&amp;gt;\. /\|&lt;&gt;\. /g;
+
+    # for images with textile
+    $str =~ s/!&amp;gt;http:/!&gt;http:/g;
+    $str =~ s/!&amp;lt;http:/!&lt;http:/g;
+
+    return $str;
+}
+</code></pre>
+
+
+<p>test using my custom <code>fence</code>  command by  displaying my Perl module that uses the Yo API.</p>
+
+<div class="fenceClass"><pre><code>package Yo;
+
+use strict;
+use warnings;
+use LWP::UserAgent;
+
+my %URLS = (
+    'all'         => 'http://api.justyo.co/yoall/',
+    'user'        => 'http://api.justyo.co/yo/',
+    'subscribers' => 'http://api.justyo.co/subscribers_count/'
+);
+
+sub new {
+    my ($class, $api_token) = @_;
+    my $self = ();
+    $self->{api_token} = $api_token;
+    $self->{link}      = undef;
+    bless($self, $class);                 
+    return $self;
+}
+
+sub set_link {
+    my ($self, $link) = @_;
+    $self->{link} = $link;
+}
+
+sub all {
+    my ($self) = @_;
+    my $ua       = LWP::UserAgent->new();
+    my $response;
+    if ( defined($self->{link}) ) { 
+        $response = $ua->post( $URLS{'all'}, { 'api_token' => $self->{api_token}, 'link' => $self->{link} } );
+    } else {
+        $response = $ua->post( $URLS{'all'}, { 'api_token' => $self->{api_token} } );
+    }
+    my $rc       = $response->code;
+    return $rc;       
+}
+
+sub user {
+    my ($self, $username) = @_;
+    my $ua       = LWP::UserAgent->new();
+    my $response;
+    if ( defined($self->{link}) ) { 
+        $response = $ua->post( $URLS{'user'}, { 'api_token' => $self->{api_token}, 'username' => $username, 'link' => $self->{link} } );
+    } else {
+        $response = $ua->post( $URLS{'user'}, { 'api_token' => $self->{api_token}, 'username' => $username } );
+    }
+    my $rc       = $response->code;
+    return $rc;       
+}
+
+sub subscribers {
+    my ($self) = @_;
+    my $ua  = LWP::UserAgent->new();
+    my $url = $URLS{'subscribers'} . "?api_token=" . $self->{api_token};
+    my $response = $ua->get($url);
+    my $content  = $response->decoded_content();
+    return $content; # return json. example {"result": 123}. let client decode json.
+}
+
+sub DESTROY {
+    my ($self) = @_;
+    $self->{api_token} = undef;
+    $self->{link} = undef;
+}
+
+1;
+</code></pre></div>
+
+
+
+
+<p><br /><a href="/tag/test">#test</a> formatting by using this post:</p>
+
+<p><a href="https://medium.com/the-future-of-work-and-business/millennials-and-the-leadership-gap-19366071eef9">https://medium.com/the-future-of-work-and-business/millennials-and-the-leadership-gap-19366071eef9</a></p>
+
+</div> <!-- close id=article-body -->
+<!-- /section article body -->
+
+
+<!-- section article footer -->
+
+<div class="greytext">
+<p> 
+by <a href="/profile">JohnR</a>
+ - 529 words
+ - 2 min read
+<br />
+created: <time datetime="Feb 20, 2015 14:08:43 Z">Feb 20, 2015 14:08:43 Z</time>
+ - modified: <time datetime="May 6, 2015 00:17:59 Z">May 6, 2015 00:17:59 Z</time>
+ - <a title="Permalink" href="/lorem-ipsum-dolor-sit-amet">#</a>
+</p>
+</div>
+
+<!-- /section article footer -->
+
+</div> <!-- close id=article -->
+<!-- /article -->
+
+
+<!-- footer -->
+<a title="About, Help, Contact" href="/info">info</a>
+
+<div>
+&copy; 2015 <a href="http://scaup.soupmode.com"><strong>Scaup</strong></a>  - Note-taking App
+</div>
+
+<!-- /footer -->
+
+</body>
+</html>
+
+
