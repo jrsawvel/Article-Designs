@@ -60,4 +60,13 @@ Simple page that uses Georgia and Arial:
 
 * [simple 2](http://testcode.soupmode.com/simple2.html)
 
+Slightly modified version of this already-brilliant and humorous [web page](http://motherfuckingwebsite.com)
+
+* [mfw.html](http://testcode.soupmode.com/article/mfw.html)
+
+A couple more examples:
+
+* [post 6](http://testcode.soupmode.com/article/post6.html) - Open Sans, 125%
+* [post 7](http://testcode.soupmode.com/article/post7.html) - Open Sans, 125%
+
 

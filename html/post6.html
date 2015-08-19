@@ -41,10 +41,6 @@ p, li {
     padding-bottom: 0;
     color: #666;
 }
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
 body {
     background: #ffffff;
     color: #000000;
@@ -54,7 +50,8 @@ body {
 }
 p, li {
     /* font-size: 120%; approx same as 1.2em */
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
+    font-size: 125%;
     color: #222;
     line-height: 165%;
     /* word-spacing: 1px; */
@@ -69,7 +66,8 @@ h1, h2, h3 {
 /*    text-align: center; */
 }
 h1 {
-    margin: 0;
+    font-size: 2em;
+    margin: 0 0 15px 0;
     padding: 0;
 }
 h2, h3 {
@@ -165,7 +163,16 @@ footer {
     text-align: center;
     font-size: 90%;
 }
-
+hgroup {
+    display: block;
+}
+aside {
+    font-size: 1.5em;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
 header {
     text-align: left;
     top: 0;
@@ -196,18 +203,26 @@ header {
 }
 #article-header p {
    line-height: 110%;
-
 }
 /* 43.75em = 700px */
 @media only screen and (max-width: 43.75em) {
+ aside {
+        font-size: 1.2em;
+    }
  h1 {
         font-size: 150%;
+        letter-spacing: normal;
+        line-height: 100%;
     }
  h2 { 
         font-size: 140%;
+        letter-spacing: normal;
+        line-height: 100%;
     }
  h3 { 
         font-size: 130%;
+        letter-spacing: normal;
+        line-height: 100%;
     }
  article {
     margin-top: 30px;
@@ -241,11 +256,11 @@ header {
 
 <section id="article-header">
 <a name="Last_Alarm_rings_for_fallen_heroes"></a>
+<hgroup>
 <h1 class="headingtext"><a href="/last-alarm-rings-for-fallen-heroes">'Last Alarm' rings for fallen heroes</a></h1>
+<aside>Thousands pack SeaGate Centre to pay their final respects</aside>
+</hgroup>
 <p>
-<big>Thousands pack SeaGate Centre to pay their final respects</big>
-<br />
-<br />
 <small>by <a href="/test">Taylor Dungjen</a> - Blade Staff Writer</small>
  - <small>Fri, Jan 31, 2014</small>
 </p>
@@ -440,7 +455,7 @@ Contact Taylor Dungjen at:
 
 <div style="text-align:center;">
 <small>
-[ main content info: color: #222; font-size: 1.2em; line-height: 165%; font-family: 'Open Sans' ]
+[ main content info: color: #222; font-size: 125%; line-height: 165%; font-family: 'Open Sans' ]
 </small>
 </div>
 

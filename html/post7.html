@@ -41,10 +41,6 @@ p, li {
     padding-bottom: 0;
     color: #666;
 }
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
 body {
     background: #ffffff;
     color: #000000;
@@ -54,7 +50,8 @@ body {
 }
 p, li {
     /* font-size: 120%; approx same as 1.2em */
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
+    font-size: 125%;
     color: #222;
     line-height: 165%;
     /* word-spacing: 1px; */
@@ -69,10 +66,16 @@ h1, h2, h3 {
 /*    text-align: center; */
 }
 h1 {
-    margin: 0;
+    font-size: 200%;
+    margin: 0 0 15px 0;
     padding: 0;
 }
-h2, h3 {
+h2 {
+    font-size: 175%;
+    padding-top: 30px;
+}
+h3 {
+    font-size: 150%;
     padding-top: 30px;
 }
 .box {
@@ -165,7 +168,16 @@ footer {
     text-align: center;
     font-size: 90%;
 }
-
+hgroup {
+    display: block;
+}
+aside {
+    font-size: 1.5em;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
 header {
     text-align: left;
     top: 0;
@@ -196,18 +208,26 @@ header {
 }
 #article-header p {
    line-height: 110%;
-
 }
 /* 43.75em = 700px */
 @media only screen and (max-width: 43.75em) {
+ aside {
+        font-size: 1.2em;
+    }
  h1 {
         font-size: 150%;
+        letter-spacing: normal;
+        line-height: 100%;
     }
  h2 { 
         font-size: 140%;
+        letter-spacing: normal;
+        line-height: 100%;
     }
  h3 { 
         font-size: 130%;
+        letter-spacing: normal;
+        line-height: 100%;
     }
  article {
     margin-top: 30px;
@@ -223,11 +243,8 @@ header {
 <header>
 <div class="greytext">
 <nav>
-<div style="float:right;padding-right:10px;">
-<a title="Search" href="/searchform"><small>search</small></a>
-</div>
 <div style="float:left;padding-left:10px;">
-<a title="Home Page" href="/"><small>home</small></a></li> 
+<a title="Home Page" href="http://toledoblade.com"><small>Blade</small></a></li> 
 </div>
 </nav>
 </div>
@@ -241,11 +258,11 @@ header {
 
 <section id="article-header">
 <a name="Last_Alarm_rings_for_fallen_heroes"></a>
+<hgroup>
 <h1 class="headingtext"><a href="/last-alarm-rings-for-fallen-heroes">'Last Alarm' rings for fallen heroes</a></h1>
+<aside>Thousands pack SeaGate Centre to pay their final respects</aside>
+</hgroup>
 <p>
-<big>Thousands pack SeaGate Centre to pay their final respects</big>
-<br />
-<br />
 <small>by <a href="/test">Taylor Dungjen</a> - Blade Staff Writer</small>
  - <small>Fri, Jan 31, 2014</small>
 </p>
@@ -273,6 +290,8 @@ Toledo Fire Chief Luis Santiago salutes the casket of James Dickman as Private D
 
 <p>Private Machcinski, 42, and Private Dickman, 31, served together, living life in 24-hour shifts to do a job they loved.</p>
 
+<h2>Sun, Jan 26, 2014</h2>
+ 
 <p>On Sunday, at 2:47 p.m., the Toledo firefighters responded together, with numerous other firefighters, to 528 Magnolia St. in North Toledo to a burning two-story apartment building.</p>
 
 <p>The conditions inside, where firefighters were searching for possible victims, worsened. Privates Machcinski and Dickman were stuck. Precious and terrifying minutes went by before either of the firefighters were rescued and carried out by their colleagues.</p>
@@ -282,6 +301,8 @@ Toledo Fire Chief Luis Santiago salutes the casket of James Dickman as Private D
 <p>At the hospital, both firemen were pronounced dead.</p>
 
 <p>What started the fire is still unclear and remains under investigation, officials said.</p>
+
+<h2>Funeral Service</h2>
 
 <p>Just before 7 p.m. at SeaGate, a set of doors opened and the thousands of people in attendance fell silent and rose to their feet to welcome the families of Private Machcinski and Private Dickman.</p>
 
@@ -333,6 +354,8 @@ Jamie Dickman, wife of Private James Dickman, receives a hug from a firefighter 
 <p>He talked about the time together with the Machcinski and Dickman families at the hospital and their homes in the immediate aftermath of the fire their time together Thursday night &mdash; bonded for life in the wake of brotherhood and death.</p>
 
 <p>&ldquo;Stephen and Jamie might be gone, they might have left, but they will always be a part of our family and both the Machcinski family and Dickman family will be with us as well,&rdquo; the chief said.</p>
+
+<h2>The Firemen</h2>
 
 <p>The chief said he knew both Private Dickman, who was hired in September, and Private Machcinski, a 15-year veteran.</p>
 
@@ -386,6 +409,8 @@ Jamie Dickman, wife of Private James Dickman, receives a hug from a firefighter 
 
 <hr class="shortgrey" />
 
+<h2>Last Alarm</h2>
+ 
 <p>A bell was rung three times each, by retired firefighter John Repp, for the firemen.</p>
 
 <p>The last alarm was read by Renzo Maraldo, a retired battalion chief.</p>
@@ -440,7 +465,7 @@ Contact Taylor Dungjen at:
 
 <div style="text-align:center;">
 <small>
-[ main content info: color: #222; font-size: 1.2em; line-height: 165%; font-family: 'Open Sans' ]
+[ main content info: color: #222; font-size: 125%; line-height: 165%; font-family: 'Open Sans' ]
 </small>
 </div>
 
