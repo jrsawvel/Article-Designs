@@ -60,9 +60,10 @@ Simple page that uses Georgia and Arial:
 
 * [simple 2](http://testcode.soupmode.com/article/simple2.html)
 
-Slightly modified version of this already-brilliant and humorous [web page](http://motherfuckingwebsite.com)
+Slightly modified versions of this already-brilliant and humorous [web page](http://motherfuckingwebsite.com)
 
 * [mfw.html](http://testcode.soupmode.com/article/mfw.html)
+* [mfw2.html](http://testcode.soupmode.com/article/mfw2.html)
 
 A couple more examples:
 
