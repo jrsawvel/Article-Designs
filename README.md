@@ -58,7 +58,7 @@ More examples:
 
 Simple page that uses Georgia and Arial:
 
-* [simple 2](http://testcode.soupmode.com/simple2.html)
+* [simple 2](http://testcode.soupmode.com/article/simple2.html)
 
 Slightly modified version of this already-brilliant and humorous [web page](http://motherfuckingwebsite.com)
 
