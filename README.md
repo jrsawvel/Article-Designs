@@ -69,5 +69,6 @@ A couple more examples:
 
 * [post 6](http://testcode.soupmode.com/article/post6.html) - Open Sans, 125%
 * [post 7](http://testcode.soupmode.com/article/post7.html) - Open Sans, 125%
+* [post 8](http://testcode.soupmode.com/article/post8.html) - Open Sans, 125%
 
 
