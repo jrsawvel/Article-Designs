@@ -1,10 +1,71 @@
 # Article Design Options
 
+
+## Jan 2016 Update
+
+In March 2014, I began trying to create my perfect or preferred article page. I've added new options since. And in January 2016, I added a few more versions. 
+
+Starting in 2015, I moved away from using any JavaScript on an article page for a user who is not logged into the site, and that includes no JavaScript-based hamburger icon menus. 
+
+I simplify the navigation options. Now I prefer to restrict the links to the home page that contains the stream of posts, and keep the article page as simple as possible with nothing extra except a link to the home page. 
+
+I don't see the point of cluttering the top nor the bottom of an article page with header and footer links for navigation or additional info. I say leave that to the home page stream.
+
+For an example of my most recent thinking, [I refer to this page, which is post9](http://testcode.soupmode.com/article/post9.html), listed below. In a month or so, I'll probably prefer something else, such as using no outside fonts and staying with fonts like Georgia and Arial. Fickle.
+
+
+## Sep 2015 Thoughts
+
+In a Sep 2015 [comment](http://toledotalk.com/cgi-bin/tt.pl/article/194907#194952) at my message board toledotalk.com, I expressed my prefs for what I would like to read at a newspaper's website.
+
+BEGIN:
+
+> I'd pay nice money for a Blade subscription if the article pages looked something like this:
+
+> <http://toledotalk.com/last-alarm.html> - (blatant copyright violation. will remove later.)
+
+> ... instead of this:
+
+> <http://www.toledoblade.com/Police-Fire/2014/01/31/Last-Alarm-rings-for-fallen-heroes.html>
+
+> ... and instead of this:
+
+> <http://m.toledoblade.com/Police-Fire/2014/01/31/Last-Alarm-rings-for-fallen-heroes.html>
+
+
+> I don't need a printed paper version. I don't need an app. I prefer one website that responds comfortably on all devices and loads fast with no mountains of JavaScript bilge, no huge irrelevant images, no ads, and no trackers and other gobbledygook that bog down page load speed.
+
+> It would be nice if the article page contained a large-ish font size and a lot of negative space. **I don't understand why some responsively-designed websites use a tiny, uncomfortable font size on mobile.**
+
+> I see no need for a bunch of navigation links in the header and footer areas of an article page. No fixed areas. No hamburger or similar menu icons, like I use here. The only link needed is a link to the home page. The reader can find all the site's link cruft on the home page.
+
+> Outside of links contained within the article, the only other acceptable link would be to a separate page that contains the Facebook comments, pertaining to the article. If I'm a buying a subscription, I do not want to see Facebook comments loaded on the same page as the article because that slows down the page load and fouls the overall look of the page.
+
+> On an article page, I want at least 99% of the page to focus on the article: Title, secondary title, author, contact info, publish date, and content.
+
+> Give non-paying customers the hideous views, and give subscribers something worth buying. Until this utopia exists, I'll continue reading with JavaScript disabled, which improves the web-viewing experience a lot.
+
+END:
+
+The number of responsively-designed websites built by big publishers that use a tiny font size for the phone display is alarming. This bad design produces a miserable reading experience. It makes no sense, unless it's intentional to encourage people to download yet another app.
+
+I don't know why it's a trend to reduce the font size as the screen size gets smaller. Why not keep the font size the same all the way through? Vox.com provides a comfortably-large font size when reading the site in portrait mode on the phone. I wish more sites did the same.
+
+It's also irritating when web designers prohibit zooming in and out of the page and prohibit the ability to read the site in landscape mode.
+
+Some of these uncomfortable, responsively-designed sites would provide a better user experience if they were built like it was 1995. At least I could view the site in landscape mode on the phone and zoom into the page for easier reading. 
+
+No CSS and no JavaScript is actually an improvement for some overly-engineered sites. In my opinion, the problem is that too many website publishers/designers/developers focus on extravagance instead of elegance.
+
+
+
+## Older Text Descriptions with New Links
+
 Minimal layout.
 
 Responsive Design.
 
-Uses Google fonts Droid Serif and Open Sans.
+Uses Google fonts or default fonts.
 
 These four examples use the jQuery plugin [mmenu](http://mmenu.frebsite.nl) for the sliding menus.
 
@@ -53,22 +114,29 @@ More examples:
 * [post 1](http://testcode.soupmode.com/article/post1.html) - default web fonts Georgia and Arial, 1.3125em
 * [post 2](http://testcode.soupmode.com/article/post2.html) - Libre Baskerville, Open Sans, 1.2em 
 * [post 3](http://testcode.soupmode.com/article/post3.html) - Droid Serif, Open Sans, 1.2em
-* [post 4](http://testcode.soupmode.com/article/post4.html) - Open Sans, 1.2em - FAV
-* [post 5](http://testcode.soupmode.com/article/post5.html) - Lora, Open Sans, 1.25em - FAV
+* [post 4](http://testcode.soupmode.com/article/post4.html) - Open Sans, 1.2em
+* [post 5](http://testcode.soupmode.com/article/post5.html) - Lora, Open Sans, 1.25em
+* [post 6](http://testcode.soupmode.com/article/post6.html) - Open Sans, 125%
+* [post 7](http://testcode.soupmode.com/article/post7.html) - Open Sans, 125%
+* [post 8](http://testcode.soupmode.com/article/post8.html) - Open Sans, 125%
+* [post 9](http://testcode.soupmode.com/article/post9.html) - Open Sans, 125% - **FAV**
 
-Simple page that uses Georgia and Arial:
 
-* [simple 2](http://testcode.soupmode.com/article/simple2.html)
+Simple pages that uses Georgia and Arial:
+
+* [simple 2](http://testcode.soupmode.com/article/simple2.html) - **FAV**
+* [jr2](http://testcode.soupmode.com/jr2.html)
+* [jr3](http://testcode.soupmode.com/jr3.html)
+* [jr4](http://testcode.soupmode.com/jr4.html)
+
 
 Slightly modified versions of this already-brilliant and humorous [web page](http://motherfuckingwebsite.com)
 
 * [mfw.html](http://testcode.soupmode.com/article/mfw.html)
 * [mfw2.html](http://testcode.soupmode.com/article/mfw2.html)
-
-A couple more examples:
-
-* [post 6](http://testcode.soupmode.com/article/post6.html) - Open Sans, 125%
-* [post 7](http://testcode.soupmode.com/article/post7.html) - Open Sans, 125%
-* [post 8](http://testcode.soupmode.com/article/post8.html) - Open Sans, 125%
-
+* [mfw3.html](http://testcode.soupmode.com/article/mfw3.html)
+* [mfw4.html](http://testcode.soupmode.com/article/mfw4.html)
+* [mfw4b.html](http://testcode.soupmode.com/article/mfw4b.html)
+* [mfw4c.html](http://testcode.soupmode.com/article/mfw4c.html)
+* [mfw4d.html](http://testcode.soupmode.com/article/mfw4d.html) - **FAV**
 

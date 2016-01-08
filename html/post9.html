@@ -1,0 +1,534 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<title>'Last Alarm' rings for fallen heroes</title>
+<meta charset="UTF-8" /> 
+<!--[if lt IE 9]> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<meta name=viewport content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href="http://fonts.googleapis.com/css?family=Open+Sans:regular,italic,bold,bolditalic"  type="text/css"> 
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+body, h1, h2, h3, .greytext, #article-header, #article-header p, #article-footer, .big-quote p {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif; 
+}
+p, li {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif; 
+}
+.photo-caption {
+    font-size: 16px;
+    line-height:115%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.big-quote p {
+    text-align: center;
+    font-size: 160%;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #666;
+}
+body {
+    background: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+p, li {
+    /* font-size: 120%; approx same as 1.2em */
+    /* font-size: 1.2em; */
+    /* font-size: 1.33em;  larger than 125% */
+    font-size: 125%;
+    color: #222;
+    line-height: 165%;
+    /* word-spacing: 1px; */
+    /* letter-spacing: .5px; */
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+h1, h2, h3 {
+    letter-spacing: 1px;
+    color: #000000;
+}
+h1 {
+    font-size: 200%;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+h2 {
+    font-size: 175%;
+    padding-top: 30px;
+}
+h3 {
+    font-size: 150%;
+    padding-top: 30px;
+}
+h2, h3, h4, h5 {
+    /* line-height: 2em; */
+    border-bottom:1px solid #eee;
+}
+.box {
+    border: 1px solid #000; 
+    padding: 10px;
+    margin: 1em 0 1em 0;
+}
+article a {
+    color: #0000ff;
+    text-decoration: underline;
+    font-weight: 100;
+}
+article a:visited {
+    color: #cc3399;
+    text-decoration: underline;
+    font-weight: 100;
+}
+article a:hover {
+    text-decoration: underline;
+    color: #01579B; 
+}
+article a:active{
+    color: #0000ff; 
+}
+article {
+    position: relative;
+    width:90%;
+    max-width: 700px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding: 0;
+}
+#related-links {
+    font-size: 90%;
+}
+#related-links li {
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+#article-min-read {
+    float:right; 
+    font-size:80%; 
+    margin-top:0px;
+}
+hr.shortgrey {
+   border: 0; 
+   height: 1px; 
+   background: #ddd;
+   width: 25%;
+   margin-top:2em;
+   margin-bottom:2em;
+}
+big {
+    color: #666;
+}
+strong {
+    color: #000000;
+}
+blockquote {
+    margin-left: 0;
+    padding-left: 1em;
+    margin-right: 0;
+    padding-right: 1em;
+    border-left: 1px solid #000;
+}
+li {
+    padding-bottom: 10px;
+}
+ol, ul {
+    margin-top: 0;
+    padding-top: 0;
+}
+img {
+    max-width: 100%;
+}    
+.greytext {
+    line-height: 150%;
+}
+.greytext a {
+    /* color: #888888; */
+    color: #01579B; 
+    text-decoration: none;
+}
+.greytext a:visited {
+    /* color: #888888; */
+    color: #01579B; 
+}
+.greytext a:hover {
+    /* color: #000000; */
+    text-decoration: underline;
+}
+#article-footer {
+    font-size:100%;
+    line-height:130%;
+}
+footer {
+    line-height: 150%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 90%;
+}
+hgroup {
+    display: block;
+}
+aside {
+    font-size: 1.5em;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+header {
+    text-align: left;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 100; 
+    float: left;
+    width: 100%;
+    left: auto;
+    position: absolute;
+    height: 20px;
+}
+.headingtext a {
+    text-decoration: none;
+    color: #000;
+    /* color: #0000ff; blue */
+    font-weight: bold;
+}
+.headingtext a:visited {
+    text-decoration: none;
+    color: #000;
+    /* color: #0000ff; blue */
+}
+.headingtext a:hover {
+    text-decoration: underline;
+    color: #000;
+    /* color: #0000ff; blue */
+}
+#article-header p {
+   line-height: 110%;
+}
+/* 50em = 800px */
+@media only screen and (max-width: 50em) {
+/*
+    article {
+        margin-top: 30px;
+    }
+*/
+}
+/* 45em = 720px */
+@media only screen and (max-width: 45em) {
+    aside {
+        font-size: 1.2em;
+    }
+     h1 {
+        font-size: 150%;
+        letter-spacing: normal;
+        line-height: 100%;
+    }
+    h2 { 
+        font-size: 140%;
+        letter-spacing: normal;
+        line-height: 100%;
+    }
+    h3 { 
+        font-size: 130%;
+        letter-spacing: normal;
+        line-height: 100%;
+    }
+/*
+    article {
+        margin-top: 30px;
+    }
+*/
+    big, .big-quote p  {
+        font-size: 140%;
+    }
+    #article-min-read {
+/*        display: none; */
+    }
+}
+</style>
+</head>
+<body>
+
+<!--
+<header>
+<div class="greytext">
+<nav>
+<div style="float:left;padding-left:10px; font-size:90%;">
+<a title="Toledo Blade home page link" href="http://toledoblade.com">Blade</a>
+</div>
+</nav>
+</div>
+</header>
+-->
+
+<!--
+<header>
+<div style="float:right;padding-right:10px;">
+<a title="Toledo Blade home page link" href="http://toledoblade.com"><img width="12" height="12" src="/article/home-logo.png"></a>
+</div>
+</header>
+-->
+
+<article>
+
+<!--
+<div id="article-min-read">
+9 min
+</div>
+-->
+
+<div id="article-min-read">
+<a title="Toledo Blade home page link" href="http://toledoblade.com"><img width="12" height="12" src="/article/home-logo.png"></a>
+</div>
+
+
+<section id="article-header">
+<h1 id="last-alarm-rings-for-fallen-heroes" title="Last Alarm rings for fallen heroes" class="headingtext"><a href="#last-alarm-rings-for-fallen-heroes">'Last Alarm' rings for fallen heroes</a></h1> 
+<aside>Thousands pack SeaGate Centre to pay their final respects</aside>
+<p style="font-size:100%;">
+by <a title="Written by Blade staff writer Taylor Dungjen" href="http://toledoblade.typepad.com/ridealong/">Taylor Dungjen</a> - Blade Staff Writer - Fri, Jan 31, 2014 - 9 min read
+</p>
+</section>
+
+<section id="article-body">
+<div class="photo-caption"> 
+<img alt="Toledo Fire Chief Luis Santiago salutes the casket of James Dickman" src="http://www.toledoblade.com/image/2014/01/30/800x_b1_cCM_z/31n6chief.jpg" />
+Toledo Fire Chief Luis Santiago salutes the casket of James Dickman as Private Dickman's wife, Jamie, right, holds their daughter Paige.<br />
+</div>
+
+<p>There was one rookie who impressed veteran firefighter Stephen Machcinski.</p>
+
+<p>The new guy on Engine 3 seemed all right &mdash; he had experience, an infectious and larger-than-life personality.</p>
+
+<p>James Dickman appeared to be an all-around good guy and good firefighter.</p>
+
+<p>&ldquo;That was something Steve rarely did, talk about new guys,&rdquo; Pvt. Jim Swartz said during a Thursday-night Last Alarm funeral service.</p>
+
+<p>More than 5,000 people packed the downtown Toledo SeaGate Convention Centre for the two-hour ceremony, attended by hundreds of firefighters from across the country and Canada. Family, friends, and total strangers gathered to say what some might consider to be a long-overdue &ldquo;Thank you.&rdquo;</p>
+
+<p>One man, prior to the 7 p.m. service, approached Battalion Chief John Kaminski and Private Swartz. He took their hands, shook them, and said, &ldquo;Thank you.&rdquo;</p>
+
+<p>That&rsquo;s all he wanted &mdash; to say thanks. Finally. After all this time. To not miss the opportunity again.</p>
+
+<p>Private Machcinski, 42, and Private Dickman, 31, served together, living life in 24-hour shifts to do a job they loved.</p>
+
+<h2 id="sun-jan-26-2014" class="headingtext"><a title="The fire occurred on Sun, Jan 26, 2014" href="#sun-jan-26-2014">Sun, Jan 26, 2014</a></h2>
+ 
+<p>On Sunday, at 2:47 p.m., the Toledo firefighters responded together, with numerous other firefighters, to 528 Magnolia St. in North Toledo to a burning two-story apartment building.</p>
+
+<p>The conditions inside, where firefighters were searching for possible victims, worsened. Privates Machcinski and Dickman were stuck. Precious and terrifying minutes went by before either of the firefighters were rescued and carried out by their colleagues.</p>
+
+<p>They were rushed to Mercy St. Vincent Medical Center, their brothers and sisters from the fire department following behind.</p>
+
+<p>At the hospital, both firemen were pronounced dead.</p>
+
+<p>What started the fire is still unclear and remains under investigation, officials said.</p>
+
+<h2 id="funeral-service" class="headingtext"><a title="Funeral service held on Thu, Jan 30, 2014" href="#funeral-service">Funeral Service</a></h2>
+
+<p>Just before 7 p.m. at SeaGate, a set of doors opened and the thousands of people in attendance fell silent and rose to their feet to welcome the families of Private Machcinski and Private Dickman.</p>
+
+<p>As the families sat, Toledo Fire Chief Luis Santiago made what was likely the longest walk of his career &mdash; taking the few steps past the caskets, offering a slow and deliberate salute, and moving around Engine 13 and up to the stage.</p>
+
+<p>The large convention center room was overwhelmed by the rhythmic sounds of drums and haunting bagpipes, a band made up of more than 75 musicians who, literally, came from coast to coast, representing fire departments in Los Angeles, Boston, and many in between.</p>
+
+<p><img alt="Bagpipe band performs" src="http://www.toledoblade.com/image/2014/01/30/800x_b1_cCM_z/31n6pipers.jpg" /></p>
+
+<p>The National Anthem was sung by Dan Desmond, vice president of Local 92, the firefighters&rsquo; union, and his son, Devon Desmond. The St. Francis de Sales High School choir performed several times throughout the ceremony.</p>
+
+<p>Battalion Chief John Kaminski, the master of ceremonies, told the Machcinski and Dickman families, &ldquo;There are no words to express the sadness and sorrow in our hearts for your loss.&rdquo;</p>
+
+<p>He pledged that the city was in safe hands Thursday night, thanks to help from fire departments in neighboring communities that stepped up to answer Toledo&rsquo;s calls for service, allowing more Toledo firefighters to attend the ceremony.</p>
+
+<p>Filling in for Toledo were firefighters from Maumee, Perrysburg, Rossford, Northwood, Oregon, Sylvania and Sylvania Township, and Washington Township.</p>
+
+<p>Rossford and Sylvania Township fire crews were called to assist Toledo firefighters at a residential fire after 8 p.m. in the 3000 block of Collingwood Boulevard. No one was injured in the fire, which officials said started in the attic and burned through the roof.</p>
+
+<p>The assisting departments were relieved of Toledo duties at about 9:50 p.m.</p>
+
+<p>In addition to the thousands at the funeral services, it was broadcast live on <span class="caps">WTVG,</span> Channel 13, and <span class="caps">WTOL,</span> Channel 11. <span class="caps">WNWO,</span> Channel 24, aired the first hour of the service and then switched to regularly scheduled programming.</p>
+
+<p>The families of the fallen firefighters sat in the front row, before the side-by-side flag-draped caskets. <span class="caps">U.S.</span> Sen. Sherrod Brown of Ohio said he was &ldquo;humbled to stand before the families of these men&rdquo; whom he later described as heroes.</p>
+
+<div class="photo-caption"> 
+<img alt="Jamie Dickman, wife of Private James Dickman, receives a hug from a firefighter" src="http://www.toledoblade.com/image/2014/01/30/800x_b1_cCM_z/n6wife-2.jpg" />
+Jamie Dickman, wife of Private James Dickman, receives a hug from a firefighter during the Last Alarm service. Seated immediately behind her is firefighter Dickman's mother, Linda.
+</div>
+
+<p>&ldquo;We as civilians run away from danger. Firefighters rush in toward that danger and they run toward each other, toward their fellow firefighters in times of need,&rdquo; Senator Brown said. &ldquo;Sure it&rsquo;s their job, but it&rsquo;s their duty and they accept it willingly.&rdquo;</p>
+
+<p>Sen. Brown said Privates Machcinski and Dickman &ldquo;never doubted the risk of being a firefighter. They never doubted their call to service. These acts of selflessness and heroism are the definition of who these men were and for that we are most grateful.&rdquo;</p>
+
+<p>Senator Brown and <span class="caps">U.S.</span> Rep. Marcy Kaptur presented the Dickman and Machcinski families with American flags that were flown over the <span class="caps">U.S.</span> Capitol on Sunday. State flags were presented to each family by Jeffrey Leming, chief deputy of the State Fire Marshal.</p>
+
+<p><img alt="Marcy Kaptur and Sherrod Brown presented the Dickman and Machcinski families with American flags" src="http://www.toledoblade.com/image/2014/01/30/800x_b1_cCM_z/n6marcy-1.jpg"  /></p>
+
+<p>In the distance was the unmistakable roar of sirens.</p>
+
+<p>Since Jan. 1, city firefighters have responded to more than 3,300 fire runs, Mayor D. Michael Collins said.</p>
+
+<p>The mayor said the deaths of the firefighters is &ldquo;one of the most difficult experiences I&rsquo;ve ever had in my life.&rdquo;</p>
+
+<p>When Chief Santiago stood behind the podium, he paused and bowed his head.</p>
+
+<p>The room was silent. The message of the chief, who has worn a pain-filled face all week, was of togetherness.</p>
+
+<p>He talked about the time together with the Machcinski and Dickman families at the hospital and their homes in the immediate aftermath of the fire their time together Thursday night &mdash; bonded for life in the wake of brotherhood and death.</p>
+
+<p>&ldquo;Stephen and Jamie might be gone, they might have left, but they will always be a part of our family and both the Machcinski family and Dickman family will be with us as well,&rdquo; the chief said.</p>
+
+<h2 id="the-firemen" class="headingtext"><a title="Info about the firemen Private Dickman and Private Machcinski" href="#the-firemen">The Firemen</a></h2>
+
+<p>The chief said he knew both Private Dickman, who was hired in September, and Private Machcinski, a 15-year veteran.</p>
+
+<p>Private Dickman, who had 10 years of experience with the Perkins Township Fire Department, was one of the first from his class &mdash; which has not yet had its graduation service &mdash; to hit the streets.</p>
+
+<p>When Chief Santiago was a battalion chief, he and Private Machcinski worked together and had an interesting relationship &mdash; Chief Santiago being an Ohio State fan and Private Machcinski bleeding maize and blue for Michigan.</p>
+
+<p>&ldquo;I read in the paper his quote from early on in his career. He said, &lsquo;Can you believe they pay us to do this?&rsquo; &rdquo; Chief Santiago said. &ldquo;I could see him saying that. He was that kind of guy. &hellip; That&rsquo;s why so many people loved to work with him and loved to be with him.&rdquo;</p>
+
+<p>The support from people in and around Toledo has been humbling.</p>
+
+<p>&ldquo;It brings you to your knees,&rdquo; Chief Santiago said.</p>
+
+<p>He was told about a doctor who tried to buy breakfast for a group of firefighters recently, but couldn&rsquo;t &mdash; someone else had already picked up the tab.</p>
+
+<p>&ldquo;When they say Toledo strong, that&rsquo;s no lie. That&rsquo;s real and it&rsquo;s great to be a part of,&rdquo; the chief said.</p>
+
+<p>Former Toledo Mayor and fire chief Mike Bell, also former fire marshal of the state, attended the service as well.</p>
+
+<p>Each of the men were recalled by others.</p>
+
+<p>President of Local 92, Jeff Romstadt, described Private Machcinski as &ldquo;even-keeled.&rdquo; &ldquo;The best compliment I believe I could pay Steve, which might not sound like much but to all of us who share this profession, it means everything: Steve was a good fireman and our brother Jamie Dickman was overflowing with potential,&rdquo; Mr. Romstadt said.</p>
+
+<hr class="shortgrey" />
+
+<section class="big-quote">
+<p>
+<em>"We fight with courage, we stand with pride, we honor those who gave their lives."</em>
+</p>
+</section>
+
+<hr class="shortgrey" />
+
+<p>Sally Glombowski, battalion chief of training, spoke about Private Dickman, with whom she said she bonded. &ldquo;His personality was irresistible,&rdquo; she said.</p>
+
+<p>Chief Glombowski said Private Dickman was quick to help his classmates in the fire academy with the barrage of information and wasn&rsquo;t afraid to try new ways of doing things. He was also a bit of a goof and a storyteller, each tale getting bigger and more outrageous as he went on. He was confident, so much so that he wasn&rsquo;t afraid to carry his wife&rsquo;s &ldquo;girl pink lunchbox.&rdquo;</p>
+
+<p>Private Dickman also wrote the motto for his fire class: &ldquo;We fight with courage, we stand with pride, we honor those who gave their lives.&rdquo;</p>
+
+<p>Retired Assistant Fire Chief Robert Schwantzl read, for the record, abbreviated versions of the firefighters&rsquo; careers. He mentioned that on March 5, 2001, Private Machcinski was given a life-saving award for an unspecified incident on East Broadway.</p>
+
+<p>Mr. Schwantzl said the badge numbers assigned to Privates Machcinski and Dickman, 80 and 50 respectively, would be retired effective immediately.</p>
+
+<h2 id="last-alarm" class="headingtext"><a title="Reading of the Last Alarm" href="#last-alarm">Last Alarm</a></h2>
+ 
+<!-- <hr class="shortgrey" /> -->
+<section class="big-quote">
+<p>
+<em>"May God rest their souls. We'll take it from here, brothers."</em>
+</p>
+</section>
+<hr class="shortgrey" />
+
+<p>A bell was rung three times each, by retired firefighter John Repp, for the firemen.</p>
+
+<p>The last alarm was read by Renzo Maraldo, a retired battalion chief.</p>
+
+<p>The radio chirps.</p>
+
+<div class="box">
+<p>"Fire dispatch to Engine 3. Toledo fire dispatch to Engine 3. Clear the air."</p>
+
+<p>"Toledo fire dispatch to Stephen A. Machcinski and James A. Dickman on all-call."</p>
+
+<p>"On Jan. 26, 2014, at 1447 hours, Stephen A. Machcinski and James A. Dickman answered their last call for service."</p>
+
+<p>"May God rest their souls. We&rsquo;ll take it from here, brothers."</p>
+</div>
+
+<p>In a wave, the hundreds of firefighters stood at attention, saluting as the caskets carrying Private Dickman and Private Machcinski were escorted to waiting hearses parked just outside.</p>
+
+<div class="photo-caption">
+<img alt="A sea of firefighters from across the nation salutes Privates Dickman and Machcinski" src="http://www.toledoblade.com/image/2014/01/30/800x_b1_cCM_z/n6salute.jpg" />
+A sea of firefighters salutes. Firefighters from across the nation traveled to the city to honor Privates Dickman and Machcinski, killed on duty Sunday.
+</div>
+
+<p>Slowly, carefully, their brothers and sisters in blue, once more, carried the fallen.</p>
+
+<p>Together.</p>
+
+<div style="text-align:center;" class="photo-caption">
+<br />
+<!-- <img alt="Stephen Machcinski and James Dickman" src="http://www.toledoblade.com/image/2014/01/31/800x_b1_cCM_z/Firemen-1-31.jpg" width="75%" height="75%" />  -->
+<div style="margin-left:12%; margin-right:12%; width:75%; height:75%;"> 
+<img alt="Stephen Machcinski and James Dickman" src="http://www.toledoblade.com/image/2014/01/31/800x_b1_cCM_z/Firemen-1-31.jpg" /> 
+</div> 
+<br /> Stephen Machcinski and James Dickman.
+</div>
+</section> <!-- close article body -->
+
+<p>
+<section id="article-footer">
+Contact Taylor Dungjen at:
+ <a title="Email address for Blade staff writer Taylor Dungjen" href="mailto:tdungjen@theblade.com"> tdungjen@theblade.com</a>, 419-724-6054, 
+ or on Twitter <a title="Twitter page for Blade staff writer Taylor Dungjen" href="https://twitter.com/taylordungjen/">@taylordungjen</a>.
+</section>
+</p>
+
+<div id="related-links">
+<p>
+Related content:
+<ul>
+<li><a title="Pipers’ pomp, plaid are all pride"           href="http://www.toledoblade.com/Police-Fire/2014/01/31/Pipers-pomp-plaid-are-all-pride-3.html">Pipers’ pomp, plaid are all pride</a></li>
+<li><a title="Inside huge crowd, the thanks are personal"  href="http://www.toledoblade.com/Police-Fire/2014/01/31/Inside-huge-crowd-the-thanks-are-personal.html">Inside huge crowd, the thanks are personal</a></li>
+<li><a title="Many pay respects at Private Dickman's wake" href="http://www.toledoblade.com/Police-Fire/2014/01/30/Public-mourning-starts-for-2-firefighters-public-viewing-held-for-Dickman.html">Many pay respects at Private Dickman's wake</a></li>
+<li><a title="The path to healing must be rocky, steep"    href="http://www.toledoblade.com/Keith-Burris/2014/01/31/The-path-to-healing-must-be-rocky-steep.html">Keith Burris column: The path to healing must be rocky, steep</a></li>
+<li><a title="Photo gallery: Last Alarm Service 1"         href="http://www.toledoblade.com/gallery/Last-Alarm-Service">Photo gallery: Last Alarm Service 1</a></li>
+<li><a title="Photo gallery: Last Alarm Service 2"         href="http://www.toledoblade.com/gallery/Last-Alarm-Service-2">Photo gallery: Last Alarm Service 2</a></li>
+<li><a title="Copy of funeral service program"             href="http://www.toledoblade.com/attachment/2014/01/30/Last-Alarm-Memorial-program.pdf">Copy of funeral service program (pdf file)</a></li>
+</ul>
+</p>
+</div>
+
+
+</article>
+
+<footer>
+<div class="greytext">
+<a title="Toledo Blade home page link" href="http://toledoblade.com">Toledo Blade</a>
+</div>
+</footer>
+
+<!--
+<div style="text-align:center;">
+<small>
+[ main content info: color: #222; font-size: 125%; line-height: 165%; font-family: 'Open Sans' ]
+</small>
+</div>
+-->
+
+</body>
+</html>
+
+
