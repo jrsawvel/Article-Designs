@@ -1,6 +1,18 @@
 # Article Design Options
 
 
+## Feb 2017 
+
+Recently, designers met to re-imagine how news might look for newspaper websites. Some thinking included the design for the single article page.
+
+* <https://www.poynterdesign.org/presentations>
+* <http://www.zeldman.com/2017/02/06/readable-branded-design>
+
+
+I used Zeldman's recommendations with some adjustments to create [this test page](http://wren.soupmode.com/test-zeldmans-article-design-ideas-2.html). And I customized [this post](http://boghop.com/my-february-2017-thoughts-about-toledo-ohio.html). Both pages were created, using my Wren static site generator.
+
+
+
 ## Jan 2016 Update
 
 In March 2014, I began trying to create my perfect or preferred article page. I've added new options since. And in January 2016, I added a few more versions. 
