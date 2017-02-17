@@ -9,7 +9,7 @@ Recently, designers met to re-imagine how news might look for newspaper websites
 * <http://www.zeldman.com/2017/02/06/readable-branded-design>
 
 
-I used Zeldman's recommendations with some adjustments to create [this test page](http://wren.soupmode.com/test-zeldmans-article-design-ideas-2.html). And I customized [this post](http://boghop.com/my-february-2017-thoughts-about-toledo-ohio.html). Both pages were created, using my Wren static site generator.
+I used Zeldman's recommendations with some adjustments to create [this test page, using Times New Roman](http://wren.soupmode.com/test-zeldmans-article-design-ideas-2.html) and [this test page, using Helvetica](http://wren.soupmode.com/test-zeldmans-article-design-ideas-3.html). And I customized [this blog post](http://boghop.com/my-february-2017-thoughts-about-toledo-ohio.html). Both pages were created, using my Wren static site generator.
 
 And since my last update here 13 months ago, I assembled a few years worth of thoughts, rants, and links into a series of posts that begin at this page: [Manifesto for Lightweight Web Pages](http://boghop.com/manifesto-for-lightweight-web-pages.html) - *My screed against web page bloat*.
 

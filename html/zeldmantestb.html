@@ -63,6 +63,8 @@ body {
 ol, ul {
   /* list-style: none; */
 }
+
+/*
 blockquote, q {
   quotes: none;
 }
@@ -71,6 +73,14 @@ q:before, q:after {
   content: '';
   content: none;
 }
+*/
+
+
+/* from my wren/boghop.com code */
+blockquote{border-left:1px solid #666;background:#f2f2f2;margin:40px 0 40px 10px;padding:0 0 0 1em}
+
+
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -86,7 +96,10 @@ body {
   font-size: 100%;
   min-height: 100%;
   font-family: "Times New Roman", serif;
+  font-family: Helvetica, sans-serif;
   color: #222;
+
+  color: #333;
 }
 
 
@@ -133,6 +146,7 @@ text-transform:none;
 text-align:left;
 margin: 20px 0px 20px 0px;
 font-family: "Times New Roman";
+font-family: Helvetica, sans-serif;
 font-weight: 800;
 }
 
@@ -145,6 +159,10 @@ font-family: Arial;
 font-weight: 400;
 font-style: normal;
 color:#000;
+
+color: #555; /* for helvetica */
+font-size: 30px;
+line-height: 30px;
 }
 
 h3 {
@@ -178,13 +196,13 @@ margin: 0px 0px 1.563em 0px;
 font-family: "Times New Roman", serif;
 font-size: 26px;
 line-height: 38px;
-/*
+
 font-family: Helvetica, sans-serif;
 font-size: 22px;
 letter-spacing:.4px;
 word-spacing: 1px;
 line-height: 36px;
-*/
+
 }
 
 p.intro {
@@ -192,6 +210,10 @@ font-size: 30px;
 line-height: 40px;
 margin: 0px 0px 1.5em 0px;
 font-family: "Times New Roman";
+
+font-family: Helvetica, sans-serif;
+font-size: 25px;
+line-height: 30px;
 }
 
 p.label {
@@ -204,6 +226,7 @@ font-size: 23px;
 color: rgba(51, 51, 51, 1);
 border-width: 3px 0px;
 font-family: "Times New Roman";
+  font-family: Helvetica, sans-serif;
 font-weight: 200;
 }
 
@@ -218,7 +241,7 @@ font-size: 24px;
 line-height: 34px;
 color: #666666;
 margin: 0px;
-font-family: Arial;
+font-family: Helvetica, sans-serif;
 }
 
 p.author-byline {
@@ -226,6 +249,8 @@ text-align: center;
 font-size: 28px;
 line-height: 40px;
 margin: 0px 0px 1.5em 0px;
+
+font-size: 24px;
 }
 
 em.emphasis {
@@ -330,6 +355,14 @@ padding: 10px 20px;
 font-family: "Times New Roman";
 font-size: 26px;
 line-height: 34px;
+
+
+
+font-family: Helvetica, sans-serif;
+font-size: 22px;
+letter-spacing:.4px;
+word-spacing: 1px;
+line-height: 36px;
 }
 
 li {
@@ -454,11 +487,18 @@ color: rgba(158, 158, 158, 1);
 }
 
 strong {
-text-transform: uppercase;
+/* text-transform: uppercase; */
 font-size: 25px;
 font-family: "Times New Roman";
 font-weight: 700;
 font-style: normal;
+
+font-family: Helvetica, sans-serif;
+font-size: 22px;
+letter-spacing:.4px;
+word-spacing: 1px;
+line-height: 36px;
+
 }
 
 @media only screen and (max-width: 1280px) {
@@ -503,7 +543,7 @@ line-height: 40px;
 <a name="heading-three-adds-punchy-commentary"></a>
 <h3>Heading Three Adds Punchy Commentary</h3>
 
-<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+<p>It is a long established fact that <strong>a reader will be distracted by the readable content of a page when looking at its layout.</strong> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
 
 <p class="label">Deck, intro, or label</p>
 
@@ -515,7 +555,13 @@ line-height: 40px;
 
 <p class="intro-paragraph">Here is a callout. If we&rsquo;re lucky, some people will read this.</p>
 
-<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+
+<blockquote>
+  <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. </p>
+</blockquote>
+
+<p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
 
 <p>I lightly edited the CSS to use Times New Roman and Arial fonts. And I adjusted font sizes and line heights.</p>
 
