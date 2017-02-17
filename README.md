@@ -11,6 +11,9 @@ Recently, designers met to re-imagine how news might look for newspaper websites
 
 I used Zeldman's recommendations with some adjustments to create [this test page](http://wren.soupmode.com/test-zeldmans-article-design-ideas-2.html). And I customized [this post](http://boghop.com/my-february-2017-thoughts-about-toledo-ohio.html). Both pages were created, using my Wren static site generator.
 
+And since my last update here 13 months ago, I assembled a few years worth of thoughts, rants, and links into a series of posts that begin at this page: [Manifesto for Lightweight Web Pages](http://boghop.com/manifesto-for-lightweight-web-pages.html) - *My screed against web page bloat*.
+
+
 
 
 ## Jan 2016 Update
