@@ -1,18 +1,62 @@
 # Article Design Options
 
 
+## Mar 2017
+
+I used my Wren static site generator to create more test pages at my Wren test site. I didn't copy all of the HTML pages into the directory for this repository. Instead I assembled the links to the pages in this one post:
+
+* [Font Testing Articles](http://wren.soupmode.com/font-testing-articles.html)
+
+The links to some of the pages:
+
+**Safe fonts**
+
+* [monospace](http://wren.soupmode.com/monospace-font-test.html) - font-size: 22px
+* [Helvetica](http://wren.soupmode.com/helvetica-font-test.html) - font-size: 22px
+* [Helvetica test 2](http://wren.soupmode.com/helvetica-font-test-2.html) - font-size: 21px
+* [Times New Roman](http://wren.soupmode.com/times-new-roman-font-test.html) - font-size: 24px
+* [default system fonts](http://wren.soupmode.com/css-font-family-test.html) - font-size: 21px 
+
+**Mostly safe fonts**
+
+* [Verdana](http://wren.soupmode.com/verdana-font-test.html) - font-size: 21px
+* [Georgia](http://wren.soupmode.com/georgia-font-test.html) - font-size: 23px
+* [Courier New](http://wren.soupmode.com/courier-new-font-test.html) - font-size: 21px
+
+Verdana and Courier New did not exist on my Linux Mint Ubuntu desktop system. I had to install a font package or something to enable those fonts.
+
+Even the CSS that I use at my Wren-built sites <http://wren.soupmode.com>, <http://birdbrainsbrewing.com>, and <http://boghop.com> feels like it could be simplified. This [test page](http://wren.soupmode.com/page-format-test-22mar2017.html) attempts to do that, but I always want additional formatting. It's hard to resist adding more CSS.
+
+The above test page included the following CSS:
+
+    font-size:       1.2rem;
+    line-height:     1.62
+    font-family:     sans-serif;
+    color:           #222;
+    letter-spacing:  .5px;
+    word-spacing:    1px;
+
+
+
 ## Feb 2017 
 
 Recently, designers met to re-imagine how news might look for newspaper websites. Some thinking included the design for the single article page.
 
-* <https://www.poynterdesign.org/presentations>
-* <http://www.zeldman.com/2017/02/06/readable-branded-design>
+* poynterdesign.org - [Presentations](https://www.poynterdesign.org/presentations)
+* zeldman.com - [Readable Branded Design](http://www.zeldman.com/2017/02/06/readable-branded-design)
 
 
-I used Zeldman's recommendations with some adjustments to create [this test page, using Times New Roman](http://wren.soupmode.com/test-zeldmans-article-design-ideas-2.html) and [this test page, using Helvetica](http://wren.soupmode.com/test-zeldmans-article-design-ideas-3.html). And I customized [this blog post](http://boghop.com/my-february-2017-thoughts-about-toledo-ohio.html). Both pages were created, using my Wren static site generator.
+I used Zeldman's recommendations with some adjustments to create [this test page](http://wren.soupmode.com/test-zeldmans-article-design-ideas-2.html). Both pages were created, using my Wren static site generator.
 
-And since my last update here 13 months ago, I assembled a few years worth of thoughts, rants, and links into a series of posts that begin at this page: [Manifesto for Lightweight Web Pages](http://boghop.com/manifesto-for-lightweight-web-pages.html) - *My screed against web page bloat*.
+And since my last update here 13 months ago, I assembled a few years worth of thoughts, rants, and links into a series of posts that begin at this page: [Manifesto for Lightweight Web Pages](http://boghop.com/manifesto-for-lightweight-web-pages.html) - *My screed against web page bloat*. 
 
+My <http://boghop.com> site attempts to apply ideas espoused by others and myself in that manifesto mess. 
+
+Currently, the Boghop default font type is Verdana with Helvetica and sans-serif as backups. The font size is defined as 21px, which is a bit large-ish, and that's fine by me, across all devices. 
+
+I used to use a light grey background, but I switched back to an all white background with the text color defined as #222. High contrast. 
+
+At some websites, I get annoyed at the text that is too light grey and the text that displays uncomfortably tiny on phones even though the sites were responsively designed.
 
 
 
@@ -154,4 +198,3 @@ Slightly modified versions of this already-brilliant and humorous [web page](htt
 * [mfw4b.html](http://testcode.soupmode.com/article/mfw4b.html)
 * [mfw4c.html](http://testcode.soupmode.com/article/mfw4c.html)
 * [mfw4d.html](http://testcode.soupmode.com/article/mfw4d.html) - **FAV**
-
